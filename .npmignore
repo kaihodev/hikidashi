@@ -5,6 +5,7 @@
 *.sublime-workspace
 *.log*
 node_modules
+src
 
 build
 .docusaurus
@@ -18,4 +19,3 @@ safe.md
 unsafe.md
 tsconfig.json
 .eslintrc.cjs
-src
