@@ -6,6 +6,7 @@ function benchCycle(e: Event) {
 
 function benchFinish(this: Suite) {
   console.log(
+    // eslint-disable-next-line no-invalid-this
     `\nfast: ${this.filter('fastest').map('name')}\nslow: ${this.filter(
       'slowest',
     ).map('name')}`,
@@ -14,7 +15,7 @@ function benchFinish(this: Suite) {
 
 export interface Bench {
   name: string;
-  fn: Function;
+  fn: () => unknown;
 }
 
 export function bench(...benches: Bench[]): void {
