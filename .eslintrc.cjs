@@ -11,6 +11,12 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['@typescript-eslint'],
+  overrides: [
+    { files: ['**/unsafe/*.ts'], rules: {
+      '@typescript-eslint/explicit-module-boundary-types': 'off',
+      '@typescript-eslint/no-explicit-any': 'off',
+    } },
+  ],
   rules: {
     'no-shadow': 'off',
     '@typescript-eslint/no-shadow': ['error'],
