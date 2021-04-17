@@ -5,8 +5,17 @@
 *.sublime-workspace
 *.log*
 node_modules
-dist
+src
 
 build
 .docusaurus
 docs
+
+jest.config.ts
+esbuild.config.js
+esbuild.test.config.js
+run-all-tests.sh
+unsafe.md
+safe.md
+tsconfig.json
+.eslintrc.cjs

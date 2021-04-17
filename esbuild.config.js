@@ -56,6 +56,7 @@ build(
     {
       entryPoints: ['src/index.ts'],
       outdir: 'dist',
+      format: 'cjs',
     },
     def,
   ),
