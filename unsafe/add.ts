@@ -9,5 +9,5 @@
  * @param x - The augend.
  * @param y - The addend.
  */
-const add = (x: any, y: any): number => { return x + y; }
+const add = (x: any, y: any): unknown => { return x + y; }
 export default add;
