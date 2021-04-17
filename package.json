@@ -1,15 +1,23 @@
 {
   "name": "hikidashi",
   "version": "0.0.1",
+  "private": false,
   "repository": "https://github.com/kaihodev/hikidashi",
   "author": "Kaihō Dev",
   "license": "MIT",
+  "main": "./dist/index.js",
+  "exports": {
+    ".": "./dist/index.js",
+    "./safe/*": "./dist/safe/*",
+    "./unsafe/*": "./dist/unsafe/*"
+  },
   "scripts": {
     "build": "run-p build:*",
     "build:main": "tsc && node esbuild.config.js",
     "build:test": "tsc && node esbuild.test.config.js",
     "test": "jest",
-    "test:coverage": "jest --coverage=true"
+    "test:coverage": "jest --coverage=true",
+    "prepack": "run-p build:main"
   },
   "dependencies": {},
   "devDependencies": {

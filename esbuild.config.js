@@ -50,3 +50,13 @@ build(
     def,
   ),
 );
+
+build(
+  Object.assign(
+    {
+      entryPoints: ['src/index.ts'],
+      outdir: 'dist',
+    },
+    def,
+  ),
+);
