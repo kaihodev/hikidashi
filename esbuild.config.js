@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 const { build } = require('esbuild');
 const glob = require('glob');
 
