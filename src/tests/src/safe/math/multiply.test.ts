@@ -1,4 +1,4 @@
-import { multiply } from '../../../safe';
+import { multiply } from '../../../../safe';
 
 describe('safe multiply', () => {
   test('multiply default arg values to equal 1', () => {

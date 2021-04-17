@@ -1,4 +1,4 @@
-import { modulo } from '../../../unsafe';
+import { modulo } from '../../../../unsafe';
 
 describe('unsafe modulo', () => {
   test('modulo default arg values to equal 0', () => {

@@ -1,10 +1,8 @@
-import { remainder } from '../../../unsafe';
+import { remainder } from '../../../../safe';
 
-describe('unsafe remainder', () => {
+describe('safe remainder', () => {
   test('remainder default arg values to equal 0', () => {
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-ignore
-    expect(remainder()).toBeNaN();
+    expect(remainder()).toBe(0);
   });
 
   test('remainder of 5 and 3 to equal 2', () => {
