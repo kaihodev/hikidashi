@@ -3,7 +3,7 @@
  *
  * @remarks
  *
- * The function makes no assumptions about the input types. 
+ * The function makes no assumptions about the input types.
  * Number casting is not performed on the augend, so operations including string concatenations will work perfectly, unlike in the safe version.
  *
  * @param x - The augend.

@@ -1,15 +1,16 @@
 import lodash from 'lodash';
 import ramda from 'ramda';
 
-import safeAdd from '../../safe/add';
-import unsafeAdd from '../../unsafe/add';
+import safeSubtract from '../../safe/subtract';
+import unsafeSubtract from '../../unsafe/subtract';
 
 import { bench } from '../util';
 
+const jsSubtract = (a: any, b: any) => a - b;
 bench(
-  { name: 'js - add', fn: () => 5 + 1 },
-  { name: 'lodash - add', fn: () => lodash.add(5, 1) },
-  { name: 'ramda - add', fn: () => ramda.add(5, 1) },
-  { name: 'hikidashi safe - add', fn: () => safeAdd(5, 1) },
-  { name: 'hikidashi unsafe - add', fn: () => unsafeAdd(5, 1) }
+  { name: 'js - subtract', fn:  () => jsSubtract(5, 1) },
+  { name: 'lodash - subtract', fn: () => lodash.subtract(5, 1) },
+  { name: 'ramda - subtract', fn: () => ramda.subtract(5, 1) },
+  { name: 'hikidashi safe - subtract', fn: () => safeSubtract(5, 1) },
+  { name: 'hikidashi unsafe - subtract', fn: () => unsafeSubtract(5, 1) }
 );

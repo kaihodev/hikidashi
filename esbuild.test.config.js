@@ -1,6 +1,7 @@
 const def = {
   format: 'cjs',
   write: true,
+  target: 'node14',
   platform: 'node',
   minify: true,
   tsconfig: 'tsconfig.json'

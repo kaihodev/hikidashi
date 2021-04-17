@@ -4,7 +4,7 @@ const glob = require('glob');
 const def = {
   format: 'cjs',
   write: true,
-  target: ['es2020'],
+  target: 'node14',
   platform: 'node',
   minify: true,
   tsconfig: 'tsconfig.json'
