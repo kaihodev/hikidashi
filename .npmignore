@@ -5,6 +5,7 @@
 *.sublime-workspace
 *.log*
 node_modules
+.husky
 
 build
 .docusaurus
