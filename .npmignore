@@ -4,6 +4,9 @@
 *.sublime-project
 *.sublime-workspace
 *.log*
+.husky
+yarn.lock
+package-lock.json
 node_modules
 src
 
