@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "paths": {},
+    "paths": {
+      "@/shared/*": ["src/shared/*"],
+    },
     "target": "esnext",
     "lib": ["esnext"],
     "outDir": "./dist",

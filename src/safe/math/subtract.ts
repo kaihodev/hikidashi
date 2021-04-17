@@ -1,4 +1,4 @@
-import type { NumberLike } from '../shared/generics';
+import type { NumberLike } from '@/shared/generics';
 
 /**
  * Subtracts two given NumberLikes.
