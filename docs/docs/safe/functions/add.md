@@ -1,0 +1,26 @@
+---
+id: "add"
+title: "Function: add"
+sidebar_label: "add"
+custom_edit_url: null
+hide_title: true
+---
+
+# Function: add
+
+▸ **add**(`x?`: NumberLike, `y?`: NumberLike): *number*
+
+Adds two given NumberLikes.
+
+#### Parameters:
+
+Name | Type | Default value | Description |
+:------ | :------ | :------ | :------ |
+`x` | NumberLike | 0 | The augend.   |
+`y` | NumberLike | 0 | The addend.   |
+
+**Returns:** *number*
+
+number - The resulting sum.
+
+Defined in: [safe/add.ts:10](https://github.com/diced/hikidashi/blob/1f00be1/src/safe/add.ts#L10)
