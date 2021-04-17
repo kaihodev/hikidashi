@@ -2,30 +2,51 @@ const { build } = require('esbuild');
 const glob = require('glob');
 
 const def = {
-  format: 'cjs',
   write: true,
-  target: ['es2020'],
+  target: 'node14',
   platform: 'node',
   minify: true,
-  tsconfig: 'tsconfig.json'
+  tsconfig: 'tsconfig.json',
 };
 
 build(
   Object.assign(
     {
       entryPoints: glob('src/safe/**/*.ts', { sync: true }),
-      outdir: 'dist/safe'
+      outdir: 'dist/safe',
     },
-    def
-  )
+    def,
+  ),
 );
 
 build(
   Object.assign(
     {
       entryPoints: glob('src/unsafe/**/*.ts', { sync: true }),
-      outdir: 'dist/unsafe'
+      outdir: 'dist/unsafe',
     },
-    def
-  )
+    def,
+  ),
+);
+
+build(
+  Object.assign(
+    {
+      entryPoints: ['src/safe.ts'],
+      outdir: 'dist',
+      bundle: true,
+    },
+    def,
+  ),
+);
+
+build(
+  Object.assign(
+    {
+      entryPoints: ['src/unsafe.ts'],
+      outdir: 'dist',
+      bundle: true,
+    },
+    def,
+  ),
 );
