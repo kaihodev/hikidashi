@@ -1,11 +1,12 @@
 import lodash from 'lodash';
 import ramda from 'ramda';
 
-const safeAdd = require('../../safe/add').default;
-const unsafeAdd = require('../../unsafe/add').default;
+import { add as safeAdd } from '../../safe';
+import { add as unsafeAdd } from '../../unsafe';
 
-const { bench } = require('../util');
+import { bench } from '../util';
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const jsAdd = (a: any, b: any) => a + b;
 
 bench(

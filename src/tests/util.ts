@@ -7,8 +7,8 @@ function benchCycle(e: Event) {
 function benchFinish(this: Suite) {
   console.log(
     `\nfast: ${this.filter('fastest').map('name')}\nslow: ${this.filter(
-      'slowest'
-    ).map('name')}`
+      'slowest',
+    ).map('name')}`,
   );
 }
 
@@ -17,11 +17,12 @@ export interface Bench {
   fn: Function;
 }
 
-export function bench(...benches: Bench[]) {
+export function bench(...benches: Bench[]): void {
   const suite = new Suite();
 
-  for (let i = 0; i !== benches.length; ++i)
+  for (let i = 0; i !== benches.length; ++i) {
     suite.add(benches[i].name, benches[i].fn);
+  }
 
   suite.on('cycle', benchCycle).on('complete', benchFinish).run();
 }
