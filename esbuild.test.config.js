@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-
 const def = {
   format: 'cjs',
   write: true,
