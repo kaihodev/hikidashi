@@ -9,3 +9,5 @@ import type { NumberLike } from '../shared/generics.d.ts';
 function add(x: NumberLike = 0, y: NumberLike = 0): number {
   return +x + +y;
 }
+
+export default add;
