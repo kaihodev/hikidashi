@@ -5,16 +5,28 @@
   "author": "Kaihō Dev",
   "license": "MIT",
   "scripts": {
+    "build:main": "tsc && node esbuild.config.js",
+    "build:test": "tsc && node esbuild.test.config.js"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
-    "eslint-config-strict": "https://github.com/kaihodev/eslint-config-strict",
+    "@types/benchmark": "^2.1.0",
+    "@types/lodash": "^4.14.168",
     "@types/node": "^14.14.33",
+    "@types/ramda": "^0.27.40",
+    "@types/underscore": "^1.11.1",
     "@typescript-eslint/eslint-plugin": "^4.17.0",
     "@typescript-eslint/parser": "^4.17.0",
+    "benchmark": "^2.1.4",
+    "benri": "^0.0.0-alpha-0",
+    "esbuild": "^0.11.11",
     "eslint": "^7.21.0",
-    "typescript": "^4.2.3"
+    "eslint-config-strict": "https://github.com/kaihodev/eslint-config-strict",
+    "glob": "^7.1.6",
+    "lodash": "^4.17.21",
+    "ramda": "^0.27.1",
+    "typescript": "^4.2.3",
+    "underscore": "^1.13.1"
   },
   "browserslist": [
     "> 0%"

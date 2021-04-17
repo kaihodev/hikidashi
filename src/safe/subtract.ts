@@ -1,4 +1,4 @@
-import type { NumberLike } from '../shared/generics.d.ts';
+import type { NumberLike } from '../shared/generics';
 
 /**
  * Subtracts two given NumberLikes.

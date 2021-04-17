@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {},
+    "target": "esnext",
+    "lib": ["esnext"],
+    "outDir": "./dist",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true
+  },
+  "include": [
+    "safe/**/*.ts",
+    "src/unsafe/**/*.ts",
+    "shared/**/*.ts",
+    "src/tests/**/*.ts"
+  ],
+  "exclude": ["node_modules"]
+}
