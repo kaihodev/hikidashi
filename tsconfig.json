@@ -2,7 +2,9 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/shared/*": ["src/shared/*"],
+      "@/safe": ["dist/safe.js"],
+      "@/unsafe": ["dist/unsafe.js"],
+      "@/shared/*": ["src/shared/*"]
     },
     "target": "esnext",
     "lib": ["esnext"],

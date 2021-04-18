@@ -12,7 +12,7 @@ module.exports = {
   },
   plugins: ['@typescript-eslint'],
   overrides: [
-    { files: ['**/unsafe/*.ts'], rules: {
+    { files: ['**/unsafe/**/*.ts'], rules: {
       '@typescript-eslint/explicit-module-boundary-types': 'off',
       '@typescript-eslint/no-explicit-any': 'off',
     } },

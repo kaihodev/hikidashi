@@ -11,8 +11,8 @@ const def = {
 require('esbuild').build(
   Object.assign(
     {
-      entryPoints: require('glob')('src/tests/**/*.ts', { sync: true }),
-      outdir: 'dist/tests',
+      entryPoints: require('glob')('tests/**/*.ts', { sync: true }),
+      outdir: 'tests/dist',
     },
     def,
   ),
