@@ -25,7 +25,7 @@ function map<T = unknown[], R = unknown>(arr: T, callback: ArrayCBT<T[keyof T], 
   const L = arr.length >>> 0;
   const A = Array(L);
   if (typeof callback !== 'function') throw new TypeError(`${callback} is not a function`);
-  for (let k = 0; k !== L; ++k) if (i in arr) { // eslint-disable-line curly
+  for (let k = 0; k !== L; ++k) if (k in arr) { // eslint-disable-line curly
     const kValue = O[k];
     const mappedValue = callback.call(thisArg, kValue, k, O);
     A[k] = mappedValue;
