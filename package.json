@@ -18,6 +18,7 @@
     "build:test": "tsc && node esbuild.test.config.js",
     "test": "jest",
     "test:coverage": "jest --coverage=true",
+    "bench": "sh run-all-benchmarks.sh",
     "prepack": "run-p build:main",
     "prepare": "husky install"
   },
