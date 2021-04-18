@@ -7,6 +7,9 @@ import identity from '@/safe/util/identity';
  * @remarks
  *
  * Certain steps in the spec have been omitted through the use of es6 features or for performance.
+ * This implementation outperforms built-in .map but runs measurably worse than other non-spec-compliant solutions out there.
+ * If you are looking for raw speed, use the unsafe version, which outperforms everybody.
+ *
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
  *
  * @template T - The type of array-like being provided.
