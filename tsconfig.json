@@ -24,10 +24,8 @@
     "isolatedModules": false
   },
   "include": [
-    "safe/**/*.ts",
-    "src/unsafe/**/*.ts",
-    "shared/**/*.ts",
-    "src/tests/**/*.ts"
+    "src/**/*.ts",
+    "tests/**/*.ts"
   ],
   "exclude": ["node_modules"]
 }
