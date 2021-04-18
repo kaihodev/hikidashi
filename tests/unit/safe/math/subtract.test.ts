@@ -1,4 +1,4 @@
-import { subtract } from '../../../../safe';
+import { subtract } from '@/safe';
 
 describe('safe subtract', () => {
   test('subtract default arg values to equal 0', () => {

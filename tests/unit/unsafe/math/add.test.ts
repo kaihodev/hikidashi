@@ -1,4 +1,4 @@
-import { add } from '../../../../unsafe';
+import { add } from '@/unsafe';
 
 describe('unsafe add', () => {
   test('add default arg values to be NaN', () => {

@@ -1,10 +1,8 @@
-import { modulo } from '../../../../unsafe';
+import { modulo } from '@/safe';
 
-describe('unsafe modulo', () => {
+describe('safe modulo', () => {
   test('modulo default arg values to equal 0', () => {
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-ignore
-    expect(modulo()).toBeNaN();
+    expect(modulo()).toBe(0);
   });
 
   test('modulo of 5 and 3 to equal 1', () => {

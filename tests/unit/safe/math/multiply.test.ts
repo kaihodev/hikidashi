@@ -1,10 +1,8 @@
-import { multiply } from '../../../../unsafe';
+import { multiply } from '@/safe';
 
-describe('unsafe multiply', () => {
+describe('safe multiply', () => {
   test('multiply default arg values to equal 1', () => {
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-ignore
-    expect(multiply()).toBeNaN();
+    expect(multiply()).toBe(1);
   });
 
   test('multiples 5 * 2 to equal 10', () => {

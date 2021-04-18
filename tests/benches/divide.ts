@@ -1,8 +1,8 @@
 import lodash from 'lodash';
 import ramda from 'ramda';
 
-import { subtract as safeDivide } from '../../safe';
-import { subtract as unsafeDivide } from '../../unsafe';
+import { subtract as safeDivide } from '@/safe';
+import { subtract as unsafeDivide } from '@/unsafe';
 
 import { bench } from '../util';
 

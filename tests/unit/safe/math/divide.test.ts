@@ -1,10 +1,8 @@
-import { divide } from '../../../../unsafe';
+import { divide } from '@/safe';
 
-describe('unsafe divide', () => {
+describe('safe divide', () => {
   test('divide default arg values to equal 1', () => {
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-ignore
-    expect(divide()).toBeNaN();
+    expect(divide()).toBe(1);
   });
 
   test('divides 5 / 2 to equal 2.5', () => {

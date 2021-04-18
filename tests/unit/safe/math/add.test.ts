@@ -1,4 +1,4 @@
-import { add } from '../../../../safe';
+import { add } from '@/safe';
 
 describe('safe add', () => {
   test('add default arg values to equal 0', () => {

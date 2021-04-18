@@ -1,4 +1,4 @@
-import { remainder } from '../../../../unsafe';
+import { remainder } from '@/unsafe';
 
 describe('unsafe remainder', () => {
   test('remainder default arg values to equal 0', () => {
