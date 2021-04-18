@@ -1,4 +1,4 @@
-import type { ArrayCBT } from '@/shared/generics';
+import type { ArrayCBT, ArrayLike } from '@/shared/generics';
 import identity from '@/safe/util/identity';
 
 /**
@@ -19,10 +19,11 @@ import identity from '@/safe/util/identity';
  *
  * @returns R[] - The new mapped array.
  */
-function map<T = unknown[], R = unknown>(arr: T, callback: ArrayCBT<T[keyof T], R> = identity, thisArg: unknown = undefined): R[] {
+function map
+  <T extends ArrayLike = unknown[], R = unknown>(arr: T, callback: ArrayCBT<T[keyof T], R> = identity, thisArg: unknown = undefined): R[] {
   if (arr == null) throw new TypeError('arr is null or not defined');
   const O = Object(arr);
-  const L = arr.length >>> 0;
+  const L = O.length >>> 0;
   const A = Array(L);
   if (typeof callback !== 'function') throw new TypeError(`${callback} is not a function`);
   for (let k = 0; k !== L; ++k) if (k in arr) { // eslint-disable-line curly
