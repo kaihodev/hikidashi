@@ -1,8 +1,8 @@
 import lodash from 'lodash';
 import ramda from 'ramda';
 
-import { add as safeAdd } from '@/safe';
-import { add as unsafeAdd } from '@/unsafe';
+import safeAdd from '@/safe/math/add';
+import unsafeAdd from '@/unsafe/math/add';
 
 import { bench } from '../util';
 

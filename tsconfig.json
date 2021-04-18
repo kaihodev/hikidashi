@@ -4,6 +4,8 @@
     "paths": {
       "@/safe": ["dist/safe.js"],
       "@/unsafe": ["dist/unsafe.js"],
+      "@/safe/*": ["src/safe/*"],
+      "@/unsafe/*": ["src/unsafe/*"],
       "@/shared/*": ["src/shared/*"]
     },
     "target": "esnext",
