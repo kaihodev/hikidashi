@@ -13,6 +13,19 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: '14.x'
+      - name: "Install main dependencies"
+        if: ${{ !steps.main-cache-restore.outputs.cache-hit }}
+        run: npm ci
+      - name: "[INIT] Restore docs dependency cache"
+        id: docs-cache-restore
+        uses: actions/cache@v2
+        with:
+          path: docs/node_modules
+          key: ${{ runner.os }}-node${{ matrix.node }}-docs${{ hashFiles('**/package-lock.json') }}
+      - name: "Install docs dependencies"
+        if: ${{ !steps.docs-cache-restore.outputs.cache-hit }}
+        run: npm ci
+        working-directory: ./docs
       - uses: webfactory/ssh-agent@v0.5.0
         with:
           ssh-private-key: ${{ secrets.GH_PAGE_DEPLOY }}
@@ -21,14 +34,7 @@ jobs:
           USE_SSH: true
           GIT_USER: kaihodev
         run: |
-          git config --global user.email "kaihodev@gmail.com"
-          git config --global user.name "kaihodev"
-          if [ -e yarn.lock ]; then
-          yarn install --frozen-lockfile
-          elif [ -e package-lock.json ]; then
-          npm ci
-          else
-          npm i
-          fi
+          git config --global user.name 'kaihodev'
+          git config --global user.email kaihodev@gmail.com
           npm run deploy
         working-directory: ./docs
