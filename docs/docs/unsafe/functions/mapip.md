@@ -31,4 +31,4 @@ Name | Type | Description |
 
 typeof arr - The modified input.
 
-Defined in: [unsafe/array/mapip.ts:19](https://github.com/diced/hikidashi/blob/b1cdd54/src/unsafe/array/mapip.ts#L19)
+Defined in: [unsafe/array/mapip.ts:19](https://github.com/diced/hikidashi/blob/4f12be0/src/unsafe/array/mapip.ts#L19)
