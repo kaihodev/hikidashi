@@ -29,4 +29,4 @@ Name | Type | Description |
 
 The result of the addition or concat.
 
-Defined in: [unsafe/add.ts:14](https://github.com/diced/hikidashi/blob/1f00be1/src/unsafe/add.ts#L14)
+Defined in: [unsafe/math/add.ts:14](https://github.com/diced/hikidashi/blob/b1cdd54/src/unsafe/math/add.ts#L14)

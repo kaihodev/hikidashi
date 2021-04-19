@@ -23,4 +23,4 @@ Name | Type | Default value | Description |
 
 number - The resulting sum.
 
-Defined in: [safe/add.ts:10](https://github.com/diced/hikidashi/blob/1f00be1/src/safe/add.ts#L10)
+Defined in: [safe/math/add.ts:10](https://github.com/diced/hikidashi/blob/b1cdd54/src/safe/math/add.ts#L10)

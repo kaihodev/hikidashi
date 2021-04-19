@@ -7,8 +7,12 @@ module.exports = [
     "items": [
       "safe/functions/add",
       "safe/functions/divide",
+      "safe/functions/identity",
+      "safe/functions/map",
+      "safe/functions/mapip",
       "safe/functions/modulo",
       "safe/functions/multiply",
+      "safe/functions/noop",
       "safe/functions/remainder",
       "safe/functions/subtract"
     ]

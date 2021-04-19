@@ -30,4 +30,4 @@ Name | Type | Default value | Description |
 
 number - The resulting modulo.
 
-Defined in: [safe/modulo.ts:17](https://github.com/diced/hikidashi/blob/1f00be1/src/safe/modulo.ts#L17)
+Defined in: [safe/math/modulo.ts:17](https://github.com/diced/hikidashi/blob/b1cdd54/src/safe/math/modulo.ts#L17)

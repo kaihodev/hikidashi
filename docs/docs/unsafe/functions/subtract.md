@@ -23,4 +23,4 @@ Name | Type | Description |
 
 number - The resulting difference.
 
-Defined in: [unsafe/subtract.ts:8](https://github.com/diced/hikidashi/blob/1f00be1/src/unsafe/subtract.ts#L8)
+Defined in: [unsafe/math/subtract.ts:8](https://github.com/diced/hikidashi/blob/b1cdd54/src/unsafe/math/subtract.ts#L8)

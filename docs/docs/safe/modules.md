@@ -15,7 +15,11 @@ hide_title: true
 
 - [add](functions/add.md)
 - [divide](functions/divide.md)
+- [identity](functions/identity.md)
+- [map](functions/map.md)
+- [mapip](functions/mapip.md)
 - [modulo](functions/modulo.md)
 - [multiply](functions/multiply.md)
+- [noop](functions/noop.md)
 - [remainder](functions/remainder.md)
 - [subtract](functions/subtract.md)

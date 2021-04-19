@@ -23,4 +23,4 @@ Name | Type | Default value | Description |
 
 number - The resulting product.
 
-Defined in: [safe/multiply.ts:10](https://github.com/diced/hikidashi/blob/1f00be1/src/safe/multiply.ts#L10)
+Defined in: [safe/math/multiply.ts:10](https://github.com/diced/hikidashi/blob/b1cdd54/src/safe/math/multiply.ts#L10)
