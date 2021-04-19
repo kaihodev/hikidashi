@@ -1,7 +1,6 @@
 ---
 id: 'installation'
 title: 'Installing Hikidashi'
-slug: '/'
+slug: '/installation'
 sidebar_label: 'Installation'
 ---
-

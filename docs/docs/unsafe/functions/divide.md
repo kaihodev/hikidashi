@@ -23,4 +23,4 @@ Name | Type | Description |
 
 The resulting quotient.
 
-Defined in: [unsafe/divide.ts:8](https://github.com/diced/hikidashi/blob/1f00be1/src/unsafe/divide.ts#L8)
+Defined in: [unsafe/math/divide.ts:8](https://github.com/diced/hikidashi/blob/b1cdd54/src/unsafe/math/divide.ts#L8)

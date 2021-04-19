@@ -23,4 +23,4 @@ Name | Type | Default value | Description |
 
 number - The resulting quotient.
 
-Defined in: [safe/divide.ts:10](https://github.com/diced/hikidashi/blob/1f00be1/src/safe/divide.ts#L10)
+Defined in: [safe/math/divide.ts:10](https://github.com/diced/hikidashi/blob/b1cdd54/src/safe/math/divide.ts#L10)

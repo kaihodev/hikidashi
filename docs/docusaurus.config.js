@@ -2,12 +2,12 @@
 module.exports = {
   title: 'Hikidashi',
   tagline: 'Convenient, simple, functional JavaScript.',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  url: 'https://diced.github.io/hikidashi',
+  baseUrl: '/hikidashi/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'kaihodev',
+  organizationName: 'diced',
   projectName: 'hikidashi',
   themeConfig: {
     colorMode: {
