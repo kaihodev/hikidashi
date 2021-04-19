@@ -4,6 +4,8 @@ import underscore from 'underscore';
 
 import safeMap from '@/safe/array/map';
 import unsafeMap from '@/unsafe/array/map';
+import safeMapip from '@/safe/array/mapip';
+import unsafeMapip from '@/unsafe/array/mapip';
 
 import { bench } from '../util';
 
@@ -19,5 +21,7 @@ bench(
   { name: 'underscore - map', fn: () => underscore.map(array, cbf) },
   { name: 'hikidashi safe - map', fn: () => safeMap(array, cbf) },
   { name: 'hikidashi unsafe - map', fn: () => unsafeMap(array, cbf) },
+  { name: 'hikidashi safe - mapip', fn: () => safeMapip(array, cbf) },
+  { name: 'hikidashi unsafe - mapip', fn: () => unsafeMapip(array, cbf) },
   { name: 'js - map', fn: () => jsMap(array, cbf) },
 );
