@@ -22,4 +22,4 @@ Name | Type | Description |
 
 T - The parameter input.
 
-Defined in: [unsafe/util/identity.ts:7](https://github.com/diced/hikidashi/blob/b1cdd54/src/unsafe/util/identity.ts#L7)
+Defined in: [unsafe/util/identity.ts:7](https://github.com/diced/hikidashi/blob/4f12be0/src/unsafe/util/identity.ts#L7)

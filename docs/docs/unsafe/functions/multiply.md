@@ -23,4 +23,4 @@ Name | Type | Description |
 
 The resulting product.
 
-Defined in: [unsafe/math/multiply.ts:8](https://github.com/diced/hikidashi/blob/b1cdd54/src/unsafe/math/multiply.ts#L8)
+Defined in: [unsafe/math/multiply.ts:8](https://github.com/diced/hikidashi/blob/4f12be0/src/unsafe/math/multiply.ts#L8)
