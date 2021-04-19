@@ -2,12 +2,12 @@
 module.exports = {
   title: 'Hikidashi',
   tagline: 'Convenient, simple, functional JavaScript.',
-  url: 'https://diced.github.io/hikidashi',
+  url: 'https://kaihodev.github.io/hikidashi',
   baseUrl: '/hikidashi/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'diced',
+  organizationName: 'kaihodev',
   projectName: 'hikidashi',
   themeConfig: {
     colorMode: {
