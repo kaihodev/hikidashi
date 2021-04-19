@@ -2,41 +2,43 @@ import type { ArrayCBT, ArrayLike } from '@/shared/generics';
 import identity from '@/safe/util/identity';
 
 /**
- * A more-or-less spec-compliant Array map.
+ * A non-spec compliant fast Array map that *modifies the input array.*
  *
  * @remarks
  *
- * Certain steps in the spec have been omitted through the use of es6 features or for performance.
- * This implementation outperforms built-in .map but runs measurably worse than other non-spec-compliant solutions out there.
- * If you are looking for raw speed, use the unsafe version of mapip, which outperforms everybody.
+ * This implementation loops in reverse order.
+ * The mapip function should be used with caution due to its destructive nature.
+ * We see promising use cases where you may iterate a map that is not used for any other purpose.
+ * Consider the following: const users = [111, 112, 113, 114].map(id => database.fetchById(id));
+ * The user ID array is not used, but all other traditional map implementations make an unnecessary allocation.
+ *
+ * If you are looking for raw speed, use the unsafe version, which outperforms everybody.
  *
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
  *
  * @template Q - The type of the array-like being provided.
  * @template T - The type of elements in the array-like being provided.
- * @template R - The return value of the provided callback, and thus, type of resulting array elements.
  *
  * @param arr      - The input array-like to map through.
  * @param callback - The callback provided to produce mapped results.
  *                   This iteratee is invoked with three arguments: value, index|key, and arr.
  * @param thisArg  - The value to use as `this` when executing callback.
  *
- * @returns R[] - The new mapped array.
+ * @returns Q - The modified input
  */
-function map
-  <Q extends ArrayLike = unknown[], T = Q[keyof Q], R = T>(
-  arr: Q, callback: ArrayCBT<T, R> = identity as ArrayCBT<T, R>, thisArg: unknown = undefined,
-): R[] {
+function mapip
+  <Q extends ArrayLike = unknown[], T = Q[keyof Q]>(
+  arr: Q, callback: ArrayCBT<T> = identity as ArrayCBT<T>, thisArg: unknown = undefined,
+): Q {
   if (arr == null) throw new TypeError('arr is null or not defined');
   const O = Object(arr);
   const L = O.length >>> 0;
-  const A = Array(L);
   if (typeof callback !== 'function') throw new TypeError(`${callback} is not a function`);
   for (let k = 0; k !== L; ++k) if (k in O) { // eslint-disable-line curly
     const kValue = O[k];
     const mappedValue = callback.call(thisArg, kValue, k, O);
-    A[k] = mappedValue;
+    O[k] = mappedValue;
   }
-  return A;
+  return O;
 }
-export default map;
+export default mapip;
