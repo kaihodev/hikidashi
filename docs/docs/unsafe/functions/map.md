@@ -27,4 +27,4 @@ Name | Type | Description |
 
 unknown[] - The new mapped array.
 
-Defined in: [unsafe/array/map.ts:15](https://github.com/kaihodev/hikidashi/blob/ee44aa9/src/unsafe/array/map.ts#L15)
+Defined in: [unsafe/array/map.ts:15](https://github.com/kaihodev/hikidashi/blob/47d8382/src/unsafe/array/map.ts#L15)

@@ -23,4 +23,4 @@ Name | Type | Default value | Description |
 
 number - The resulting remainder.
 
-Defined in: [safe/math/remainder.ts:10](https://github.com/kaihodev/hikidashi/blob/ee44aa9/src/safe/math/remainder.ts#L10)
+Defined in: [safe/math/remainder.ts:10](https://github.com/kaihodev/hikidashi/blob/47d8382/src/safe/math/remainder.ts#L10)

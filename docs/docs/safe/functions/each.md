@@ -37,4 +37,4 @@ Name | Type | Description |
 
 void
 
-Defined in: [safe/array/each.ts:23](https://github.com/kaihodev/hikidashi/blob/ee44aa9/src/safe/array/each.ts#L23)
+Defined in: [safe/array/each.ts:23](https://github.com/kaihodev/hikidashi/blob/47d8382/src/safe/array/each.ts#L23)

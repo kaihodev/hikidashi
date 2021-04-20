@@ -70,7 +70,7 @@ module.exports = {
         id: 'safe-api',
         entryPoints: ['../src/safe.ts'],
         readme: '../safe.md',
-        tsconfig: '../tsconfig.json',
+        tsconfig: './tsconfig.json',
         out: 'safe',
         allReflectionsHaveOwnDocument: true,
         sidebar: {
@@ -84,7 +84,7 @@ module.exports = {
         id: 'unsafe-api',
         entryPoints: ['../src/unsafe.ts'],
         readme: '../unsafe.md',
-        tsconfig: '../tsconfig.json',
+        tsconfig: './tsconfig.json',
         out: 'unsafe',
         allReflectionsHaveOwnDocument: true,
         sidebar: {

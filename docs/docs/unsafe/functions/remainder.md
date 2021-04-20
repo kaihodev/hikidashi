@@ -23,4 +23,4 @@ Name | Type | Description |
 
 number - The resulting remainder.
 
-Defined in: [unsafe/math/remainder.ts:8](https://github.com/kaihodev/hikidashi/blob/ee44aa9/src/unsafe/math/remainder.ts#L8)
+Defined in: [unsafe/math/remainder.ts:8](https://github.com/kaihodev/hikidashi/blob/47d8382/src/unsafe/math/remainder.ts#L8)

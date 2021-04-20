@@ -42,4 +42,4 @@ Name | Type | Description |
 
 Q - The modified input
 
-Defined in: [safe/array/mapip.ts:28](https://github.com/kaihodev/hikidashi/blob/ee44aa9/src/safe/array/mapip.ts#L28)
+Defined in: [safe/array/mapip.ts:28](https://github.com/kaihodev/hikidashi/blob/47d8382/src/safe/array/mapip.ts#L28)

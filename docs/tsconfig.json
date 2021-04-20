@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/safe": ["../dist/safe.js"],
+      "@/unsafe": ["../dist/unsafe.js"],
+      "@/safe/*": ["../src/safe/*"],
+      "@/unsafe/*": ["../src/unsafe/*"],
+      "@/shared/*": ["../src/shared/*"]
+    },
+    "target": "esnext",
+    "lib": ["esnext"],
+    "outDir": "../dist",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": false
+  },
+  "include": [
+    "../src/**/*.ts",
+    "../tests/**/*.ts"
+  ],
+  "exclude": ["node_modules"]
+}
