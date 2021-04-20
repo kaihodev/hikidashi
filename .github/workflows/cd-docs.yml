@@ -31,7 +31,8 @@ jobs:
           else
           npm i
           fi
-          npm run build
+          npm run build:main
+          npm run build:test
 
           cd ./docs
 
