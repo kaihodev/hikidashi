@@ -7,6 +7,7 @@ module.exports = [
     "items": [
       "unsafe/functions/add",
       "unsafe/functions/divide",
+      "unsafe/functions/each",
       "unsafe/functions/identity",
       "unsafe/functions/map",
       "unsafe/functions/mapip",

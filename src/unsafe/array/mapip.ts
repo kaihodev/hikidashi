@@ -1,7 +1,7 @@
 import type { ArrayLike, ArrayCB } from '@/shared/generics';
 
 /**
- * A non-spec compliant fast Array map that *modifies the input array.*
+ * A non-spec compliant fast Array map that *modifies the input array* and maps in-place.
  *
  * @remarks
  *

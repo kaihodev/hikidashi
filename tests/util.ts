@@ -1,4 +1,6 @@
-import { Event, Suite } from 'benchmark';
+import Benchmark, { Event, Suite } from 'benchmark';
+
+Benchmark.options.minSamples = 200;
 
 function benchCycle(e: Event) {
   console.log(String(e.target));

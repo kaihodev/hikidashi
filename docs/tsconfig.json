@@ -2,15 +2,15 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/safe": ["./dist/safe.js"],
-      "@/unsafe": ["./dist/unsafe.js"],
-      "@/safe/*": ["./src/safe/*"],
-      "@/unsafe/*": ["./src/unsafe/*"],
-      "@/shared/*": ["./src/shared/*"]
+      "@/safe": ["../dist/safe.js"],
+      "@/unsafe": ["../dist/unsafe.js"],
+      "@/safe/*": ["../src/safe/*"],
+      "@/unsafe/*": ["../src/unsafe/*"],
+      "@/shared/*": ["../src/shared/*"]
     },
     "target": "esnext",
     "lib": ["esnext"],
-    "outDir": "./dist",
+    "outDir": "../dist",
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -24,8 +24,7 @@
     "isolatedModules": false
   },
   "include": [
-    "src/**/*.ts",
-    "tests/**/*.ts"
+    "../src/**/*.ts",
   ],
   "exclude": ["node_modules"]
 }
