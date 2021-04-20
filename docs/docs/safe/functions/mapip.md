@@ -10,11 +10,10 @@ hide_title: true
 
 ▸ **mapip**<Q, T\>(`arr`: Q, `callback?`: *ArrayCBT*<T\>, `thisArg?`: *unknown*): Q
 
-A non-spec compliant fast Array map that *modifies the input array.*
+A non-spec compliant fast Array map that *modifies the input array* and maps in-place.
 
 **`remarks`** 
 
-This implementation loops in reverse order.
 The mapip function should be used with caution due to its destructive nature.
 We see promising use cases where you may iterate a map that is not used for any other purpose.
 Consider the following: const users = [111, 112, 113, 114].map(id => database.fetchById(id));
@@ -43,4 +42,4 @@ Name | Type | Description |
 
 Q - The modified input
 
-Defined in: [safe/array/mapip.ts:29](https://github.com/diced/hikidashi/blob/4f12be0/src/safe/array/mapip.ts#L29)
+Defined in: [safe/array/mapip.ts:28](https://github.com/kaihodev/hikidashi/blob/ee44aa9/src/safe/array/mapip.ts#L28)

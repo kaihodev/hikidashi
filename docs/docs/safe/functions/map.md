@@ -40,4 +40,4 @@ Name | Type | Description |
 
 R[] - The new mapped array.
 
-Defined in: [safe/array/map.ts:26](https://github.com/diced/hikidashi/blob/4f12be0/src/safe/array/map.ts#L26)
+Defined in: [safe/array/map.ts:26](https://github.com/kaihodev/hikidashi/blob/ee44aa9/src/safe/array/map.ts#L26)

@@ -15,6 +15,7 @@ hide_title: true
 
 - [add](functions/add.md)
 - [divide](functions/divide.md)
+- [each](functions/each.md)
 - [identity](functions/identity.md)
 - [map](functions/map.md)
 - [mapip](functions/mapip.md)
@@ -23,3 +24,9 @@ hide_title: true
 - [noop](functions/noop.md)
 - [remainder](functions/remainder.md)
 - [subtract](functions/subtract.md)
+
+## References
+
+### forEach
+
+Renames and exports: [each](functions/each.md)

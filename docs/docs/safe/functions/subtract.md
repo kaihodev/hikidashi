@@ -23,4 +23,4 @@ Name | Type | Default value | Description |
 
 number - The resulting difference.
 
-Defined in: [safe/math/subtract.ts:10](https://github.com/diced/hikidashi/blob/4f12be0/src/safe/math/subtract.ts#L10)
+Defined in: [safe/math/subtract.ts:10](https://github.com/kaihodev/hikidashi/blob/ee44aa9/src/safe/math/subtract.ts#L10)

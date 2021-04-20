@@ -10,7 +10,7 @@ hide_title: true
 
 ▸ `Const`**mapip**(`arr`: *any*, `cb`: ArrayCB): *any*
 
-A non-spec compliant fast Array map that *modifies the input array.*
+A non-spec compliant fast Array map that *modifies the input array* and maps in-place.
 
 **`remarks`** 
 
@@ -31,4 +31,4 @@ Name | Type | Description |
 
 typeof arr - The modified input.
 
-Defined in: [unsafe/array/mapip.ts:19](https://github.com/diced/hikidashi/blob/4f12be0/src/unsafe/array/mapip.ts#L19)
+Defined in: [unsafe/array/mapip.ts:19](https://github.com/kaihodev/hikidashi/blob/ee44aa9/src/unsafe/array/mapip.ts#L19)
