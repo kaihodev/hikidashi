@@ -14,8 +14,8 @@
   },
   "scripts": {
     "build": "run-p build:*",
-    "build:main": "tsc && node esbuild.config.js && gen-esm-wrapper dist/index.js dist/index.mjs",
-    "build:test": "tsc && node esbuild.test.config.js",
+    "build:main": "node esbuild.config.js && gen-esm-wrapper dist/index.js dist/index.mjs && tsc",
+    "build:test": "node esbuild.test.config.js && tsc",
     "test": "jest",
     "test:coverage": "jest --coverage=true",
     "bench": "sh run-all-benchmarks.sh",
