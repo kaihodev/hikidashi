@@ -10,7 +10,6 @@ jobs:
     if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     steps:
-
       - uses: actions/checkout@v1
       - uses: actions/setup-node@v1
         with:
@@ -33,4 +32,4 @@ jobs:
 
           yarn install
 
-          npm run deploy
+          yarn deploy
