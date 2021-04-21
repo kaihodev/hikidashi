@@ -1,4 +1,4 @@
-name: "CI: Lint & Test"
+name: 'CI: Lint & Test'
 on: [push, pull_request]
 jobs:
   test-coverage:
@@ -12,19 +12,19 @@ jobs:
       matrix:
         node: [14]
     steps:
-      - name: "Checkout repository"
+      - name: 'Checkout repository'
         uses: actions/checkout@v2
-      - name: "Install Node.js ${{ matrix.node }}"
+      - name: 'Install Node.js ${{ matrix.node }}'
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node }}
-      - name: "Restore dependency cache"
+      - name: 'Restore dependency cache'
         id: cache-restore
         uses: actions/cache@v2
         with:
           path: node_modules
           key: ${{ runner.os }}-node${{ matrix.node }}-${{ hashFiles('**/package-lock.json') }}
-      - name: "Install dependencies"
+      - name: 'Install dependencies'
         if: ${{ !steps.cache-restore.outputs.cache-hit }}
         run: |
           if [ -e yarn.lock ]; then
@@ -34,5 +34,6 @@ jobs:
           else
           npm i
           fi
-      - name: "Test"
+          npm run build:main
+      - name: 'Test'
         run: npm run test:coverage
