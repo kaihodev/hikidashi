@@ -8,6 +8,7 @@ module.exports = [
       "safe/functions/add",
       "safe/functions/divide",
       "safe/functions/each",
+      "safe/functions/filter",
       "safe/functions/identity",
       "safe/functions/map",
       "safe/functions/mapip",
