@@ -27,13 +27,8 @@ jobs:
       - name: 'Install dependencies'
         if: ${{ !steps.cache-restore.outputs.cache-hit }}
         run: |
-          if [ -e yarn.lock ]; then
-          yarn install --frozen-lockfile
-          elif [ -e package-lock.json ]; then
-          npm ci
-          else
-          npm i
-          fi
-          npm run build:main
+          yarn install
+      - name: 'Build'
+        run: npm run build
       - name: 'Test'
         run: npm run test:coverage
