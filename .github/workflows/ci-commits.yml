@@ -3,7 +3,7 @@ on: [push, pull_request]
 jobs:
   commit-lint:
     name: Commit Lint
-    if: "!(contains(github.event.head_commit.message, '[skip_ci]'))"
+    # if: "!(contains(github.event.head_commit.message, '[skip_ci]'))"
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -25,8 +25,7 @@ jobs:
           path: node_modules
           key: ${{ runner.os }}-node${{ matrix.node }}-${{ hashFiles('**/package-lock.json') }}
       - name: 'Install dependencies'
+        if: ${{ !steps.cache-restore.outputs.cache-hit }}
         run: yarn install
-      - name: 'Get Commit'
-        run: export COMMIT=$(git log -1 --pretty=format:"%s")
       - name: 'Commit Lint'
-        run: echo $COMMIT | yarn commitlint
+        run: echo '${{ github.event.head_commit.message }}' | yarn commitlint
