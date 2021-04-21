@@ -27,7 +27,7 @@ jobs:
       - name: 'Install dependencies'
         if: ${{ !steps.cache-restore.outputs.cache-hit }}
         run: yarn install --frozen-lockfile
+      - name: 'Build'
+        run: npm run build:main
       - name: 'Test'
-        run: 
-          npm run build:main
-          npm run test:coverage
+        run: npm run test:coverage
