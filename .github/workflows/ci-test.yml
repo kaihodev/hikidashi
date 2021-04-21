@@ -26,8 +26,9 @@ jobs:
           key: ${{ runner.os }}-node${{ matrix.node }}-${{ hashFiles('**/package-lock.json') }}
       - name: 'Install dependencies'
         if: ${{ !steps.cache-restore.outputs.cache-hit }}
-        run: yarn install --frozen-lockfile
+        run: |
+          yarn install
       - name: 'Build'
-        run: npm run build:main
+        run: npm run build
       - name: 'Test'
         run: npm run test:coverage

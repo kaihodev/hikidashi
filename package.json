@@ -13,13 +13,14 @@
     "./*": "./dist/*"
   },
   "scripts": {
-    "build": "run-p build:*",
-    "build:main": "node esbuild.config.js && gen-esm-wrapper dist/index.js dist/index.mjs && tsc",
+    "build": "run-s build:*",
+    "build:main": "node esbuild.config.js && tsc",
     "build:test": "node esbuild.test.config.js && tsc",
+    "build:mjs": "gen-esm-wrapper dist/index.js dist/index.mjs",
     "test": "jest",
     "test:coverage": "jest --coverage=true",
     "bench": "sh run-all-benchmarks.sh",
-    "prepack": "run-p build:main",
+    "prepack": "run-s \"build:?(main|mjs)\"",
     "prepare": "husky install"
   },
   "dependencies": {},
