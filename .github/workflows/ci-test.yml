@@ -1,0 +1,31 @@
+name: "CI: Lint & Test"
+on: [push, pull_request]
+jobs:
+  test-coverage:
+    name: Test with Coverage
+    if: "!(contains(github.event.head_commit.message, '[skip_ci]'))"
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+    strategy:
+      matrix:
+        node: [14]
+    steps:
+      - name: "Checkout repository"
+        uses: actions/checkout@v2
+      - name: "Install Node.js ${{ matrix.node }}"
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node }}
+      - name: "Restore dependency cache"
+        id: cache-restore
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node${{ matrix.node }}-${{ hashFiles('**/package-lock.json') }}
+      - name: "Install dependencies"
+        if: ${{ !steps.cache-restore.outputs.cache-hit }}
+        run: npm ci
+      - name: "Test"
+        run: npm run test:coverage
