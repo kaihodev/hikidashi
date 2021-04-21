@@ -30,4 +30,4 @@ Name | Type | Description |
 
 number - The resulting modulo.
 
-Defined in: [unsafe/math/modulo.ts:15](https://github.com/kaihodev/hikidashi/blob/47d8382/src/unsafe/math/modulo.ts#L15)
+Defined in: [unsafe/math/modulo.ts:15](https://github.com/diced/hikidashi/blob/ec4e1b9/src/unsafe/math/modulo.ts#L15)

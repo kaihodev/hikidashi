@@ -22,4 +22,4 @@ Name | Type | Description |
 
 void
 
-Defined in: [safe/util/noop.ts:9](https://github.com/kaihodev/hikidashi/blob/47d8382/src/safe/util/noop.ts#L9)
+Defined in: [safe/util/noop.ts:9](https://github.com/diced/hikidashi/blob/ec4e1b9/src/safe/util/noop.ts#L9)

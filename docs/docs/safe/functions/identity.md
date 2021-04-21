@@ -28,4 +28,4 @@ Name | Type | Description |
 
 T - The parameter input.
 
-Defined in: [safe/util/identity.ts:7](https://github.com/kaihodev/hikidashi/blob/47d8382/src/safe/util/identity.ts#L7)
+Defined in: [safe/util/identity.ts:7](https://github.com/diced/hikidashi/blob/ec4e1b9/src/safe/util/identity.ts#L7)
