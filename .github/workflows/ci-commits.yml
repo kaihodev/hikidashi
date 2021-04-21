@@ -25,8 +25,8 @@ jobs:
           path: node_modules
           key: ${{ runner.os }}-node${{ matrix.node }}-${{ hashFiles('**/package-lock.json') }}
       - name: 'Install dependencies'
-        run: yarn install
-      - name: 'Set Commit'
-        run: export COMMIT="${{ github.event.head_commit.message }}"
+        run: yarn install"
       - name: 'Commit Lint'
-        run: echo $COMMIT | yarn commitlint
+        run: |
+          export COMMIT="${{ github.event.head_commit.message }}"
+          echo $COMMIT | yarn commitlint
