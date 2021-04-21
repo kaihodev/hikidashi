@@ -29,3 +29,4 @@ tsconfig.json
 .lintstagedrc.json
 
 run-all-benchmarks.sh
+CODE_OF_CONDUCT.md
