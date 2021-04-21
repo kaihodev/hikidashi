@@ -18,7 +18,7 @@ const FeatureList = [
     Svg: require('../../static/img/fast.svg').default,
     description: (
       <>
-        Built for the new age. Hikidashi preforms orders of magnitude faster than other libraries like lodash and ramda.
+        Built for the new age. Hikidashi performs orders of magnitude faster than other libraries like lodash and ramda.
       </>
     ),
   },
