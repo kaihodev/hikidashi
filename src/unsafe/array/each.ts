@@ -14,6 +14,6 @@ import type { ArrayLike, ArrayCB } from '@/shared/generics';
  */
 const each = (arr: ArrayLike, cb: ArrayCB): void => {
   let i = arr.length;
-  while (--i) cb(arr[i], i, arr); // eslint-disable-line callback-return
+  while (i--) cb(arr[i], i, arr); // eslint-disable-line callback-return
 };
 export default each;

@@ -18,7 +18,7 @@ import type { ArrayLike, ArrayCB } from '@/shared/generics';
  */
 const mapip = (arr: ArrayLike, cb: ArrayCB): typeof arr => {
   let i = arr.length;
-  while (--i) arr[i] = cb(arr[i], i, arr); // eslint-disable-line callback-return
+  while (i--) arr[i] = cb(arr[i], i, arr); // eslint-disable-line callback-return
   return arr;
 };
 export default mapip;

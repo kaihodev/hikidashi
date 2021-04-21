@@ -48,3 +48,7 @@ nav {
 .text--center {
   transition: all 1s ease-in 0.05s;
 }
+
+.navbar__logo {
+  border-radius: 7px;
+}
