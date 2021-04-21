@@ -1,4 +1,4 @@
-name: documentation
+name: 'CI: Docs'
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
 
 jobs:
   gh-release:
-    name: 'GitHub Pages Documentation'
+    name: 'Release Documentation to GitHub Pages'
     if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     steps:

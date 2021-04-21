@@ -6,6 +6,7 @@
   "author": "Kaihō Dev",
   "license": "MIT",
   "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": "./dist/index.js",
     "./safe": "./dist/safe.js",
@@ -14,13 +15,14 @@
   },
   "scripts": {
     "build": "run-s build:*",
-    "build:main": "node esbuild.config.js && tsc",
-    "build:test": "node esbuild.test.config.js && tsc",
+    "build:main": "node esbuild.config.js",
+    "build:types": "tsc -b src",
+    "build:test": "node esbuild.test.config.js",
     "build:mjs": "gen-esm-wrapper dist/index.js dist/index.mjs",
     "test": "jest",
     "test:coverage": "jest --coverage=true",
     "bench": "sh run-all-benchmarks.sh",
-    "prepack": "run-s \"build:?(main|mjs)\"",
+    "prepack": "run-s \"build:?(main|types|mjs)\"",
     "prepare": "husky install"
   },
   "dependencies": {},
