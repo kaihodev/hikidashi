@@ -1,19 +1,19 @@
 ---
-id: "noop"
-title: "Function: noop"
-sidebar_label: "noop"
+id: 'noop'
+title: 'Function: noop'
+sidebar_label: 'noop'
 custom_edit_url: null
 hide_title: true
 ---
 
 # Function: noop
 
-▸ `Const`**noop**(): *void*
+▸ `Const`**noop**(): _void_
 
 Noop function that does nothing.
 
-**Returns:** *void*
+**Returns:** _void_
 
 void
 
-Defined in: [unsafe/util/noop.ts:6](https://github.com/kaihodev/hikidashi/blob/47d8382/src/unsafe/util/noop.ts#L6)
+Defined in: [unsafe/util/noop.ts:6](https://github.com/kaihodev/hikidashi/blob/031836f/src/unsafe/util/noop.ts#L6)

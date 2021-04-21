@@ -1,7 +1,7 @@
 module.exports = {
   sidebar: {
     Hikidashi: [
-      'installation',
+      'getting-started',
       {
         type: 'category',
         label: 'API Reference',

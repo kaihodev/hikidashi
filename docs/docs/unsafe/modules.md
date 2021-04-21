@@ -16,6 +16,7 @@ hide_title: true
 - [add](functions/add.md)
 - [divide](functions/divide.md)
 - [each](functions/each.md)
+- [filter](functions/filter.md)
 - [identity](functions/identity.md)
 - [map](functions/map.md)
 - [mapip](functions/mapip.md)

@@ -1,30 +1,30 @@
 ---
-id: "map"
-title: "Function: map"
-sidebar_label: "map"
+id: 'map'
+title: 'Function: map'
+sidebar_label: 'map'
 custom_edit_url: null
 hide_title: true
 ---
 
 # Function: map
 
-▸ `Const`**map**(`arr`: *any*, `cb`: ArrayCB): *unknown*[]
+▸ `Const`**map**(`arr`: _any_, `cb`: ArrayCB): _unknown_[]
 
 A non-spec compliant fast Array map.
 
-**`remarks`** 
+**`remarks`**
 
 This implementation loops in reverse order.
 
 #### Parameters:
 
-Name | Type | Description |
-:------ | :------ | :------ |
-`arr` | *any* | The input array-like to map through.   |
-`cb` | ArrayCB | The callback provided to produce mapped results. This iteratee is invoked with three arguments: value, index\|key, and arr.    |
+| Name  | Type    | Description                                                                                                                 |
+| :---- | :------ | :-------------------------------------------------------------------------------------------------------------------------- |
+| `arr` | _any_   | The input array-like to map through.                                                                                        |
+| `cb`  | ArrayCB | The callback provided to produce mapped results. This iteratee is invoked with three arguments: value, index\|key, and arr. |
 
-**Returns:** *unknown*[]
+**Returns:** _unknown_[]
 
 unknown[] - The new mapped array.
 
-Defined in: [unsafe/array/map.ts:15](https://github.com/kaihodev/hikidashi/blob/47d8382/src/unsafe/array/map.ts#L15)
+Defined in: [unsafe/array/map.ts:15](https://github.com/kaihodev/hikidashi/blob/031836f/src/unsafe/array/map.ts#L15)

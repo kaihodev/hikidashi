@@ -8,6 +8,7 @@ module.exports = [
       "unsafe/functions/add",
       "unsafe/functions/divide",
       "unsafe/functions/each",
+      "unsafe/functions/filter",
       "unsafe/functions/identity",
       "unsafe/functions/map",
       "unsafe/functions/mapip",
