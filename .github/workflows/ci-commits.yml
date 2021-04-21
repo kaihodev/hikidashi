@@ -25,7 +25,8 @@ jobs:
           path: node_modules
           key: ${{ runner.os }}-node${{ matrix.node }}-${{ hashFiles('**/package-lock.json') }}
       - name: 'Install dependencies'
-        if: ${{ !steps.cache-restore.outputs.cache-hit }}
         run: yarn install
+      - name: 'Set Commit'
+        run: export COMMIT="${{ github.event.head_commit.message }}"
       - name: 'Commit Lint'
-        run: echo '${{ github.event.head_commit.message }}' | yarn commitlint
+        run: echo $COMMIT | yarn commitlint
