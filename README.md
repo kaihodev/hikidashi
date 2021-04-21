@@ -33,7 +33,7 @@ Using a single require:
 const { unsafe } = require('hikidashi');
 
 const series = unsafe.mapip([1, 2, 3, 4], e => e * 2);
-console.log(series); // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+console.log(series); // [2, 4, 6, 8]
 ```
 
 Using exported paths:
@@ -41,7 +41,7 @@ Using exported paths:
 const safe = require('hikidashi/safe');
 
 const series = safe.filter([true, false, true])
-console.log(series); // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+console.log(series); // [true, true]
 ```
 
 ## Why Hikidashi
