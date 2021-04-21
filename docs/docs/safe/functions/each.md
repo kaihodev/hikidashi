@@ -1,18 +1,18 @@
 ---
-id: "each"
-title: "Function: each"
-sidebar_label: "each"
+id: 'each'
+title: 'Function: each'
+sidebar_label: 'each'
 custom_edit_url: null
 hide_title: true
 ---
 
 # Function: each
 
-▸ **each**<Q, T\>(`arr`: Q, `callback?`: *ArrayCBT*<T\>, `thisArg?`: *unknown*): *void*
+▸ **each**<Q, T\>(`arr`: Q, `callback?`: _ArrayCBT_<T\>, `thisArg?`: _unknown_): _void_
 
 A more-or-less spec-compliant Array forEach.
 
-**`remarks`** 
+**`remarks`**
 
 This implementation loops in reverse order.
 
@@ -20,21 +20,21 @@ This implementation loops in reverse order.
 
 #### Type parameters:
 
-Name | Type | Default | Description |
-:------ | :------ | :------ | :------ |
-`Q` | *unknown* | *unknown*[] | The type of the array-like being provided.   |
-`T` | - | Q[keyof Q] | The type of elements in the array-like being provided.    |
+| Name | Type      | Default     | Description                                            |
+| :--- | :-------- | :---------- | :----------------------------------------------------- |
+| `Q`  | _unknown_ | _unknown_[] | The type of the array-like being provided.             |
+| `T`  | -         | Q[keyof Q]  | The type of elements in the array-like being provided. |
 
 #### Parameters:
 
-Name | Type | Description |
-:------ | :------ | :------ |
-`arr` | Q | The input array-like to loop through.   |
-`callback` | *ArrayCBT*<T\> | The callback provided.                   This iteratee is invoked with three arguments: value, index\|key, and arr.   |
-`thisArg` | *unknown* | The value to use as `this` when executing callback.    |
+| Name       | Type           | Description                                                                                       |
+| :--------- | :------------- | :------------------------------------------------------------------------------------------------ |
+| `arr`      | Q              | The input array-like to loop through.                                                             |
+| `callback` | _ArrayCBT_<T\> | The callback provided. This iteratee is invoked with three arguments: value, index\|key, and arr. |
+| `thisArg`  | _unknown_      | The value to use as `this` when executing callback.                                               |
 
-**Returns:** *void*
+**Returns:** _void_
 
 void
 
-Defined in: [safe/array/each.ts:23](https://github.com/diced/hikidashi/blob/ec4e1b9/src/safe/array/each.ts#L23)
+Defined in: [safe/array/each.ts:23](https://github.com/kaihodev/hikidashi/blob/031836f/src/safe/array/each.ts#L23)

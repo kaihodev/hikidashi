@@ -1,18 +1,18 @@
 ---
-id: "mapip"
-title: "Function: mapip"
-sidebar_label: "mapip"
+id: 'mapip'
+title: 'Function: mapip'
+sidebar_label: 'mapip'
 custom_edit_url: null
 hide_title: true
 ---
 
 # Function: mapip
 
-▸ **mapip**<Q, T\>(`arr`: Q, `callback?`: *ArrayCBT*<T\>, `thisArg?`: *unknown*): Q
+▸ **mapip**<Q, T\>(`arr`: Q, `callback?`: _ArrayCBT_<T\>, `thisArg?`: _unknown_): Q
 
-A non-spec compliant fast Array map that *modifies the input array* and maps in-place.
+A non-spec compliant fast Array map that _modifies the input array_ and maps in-place.
 
-**`remarks`** 
+**`remarks`**
 
 The mapip function should be used with caution due to its destructive nature.
 We see promising use cases where you may iterate a map that is not used for any other purpose.
@@ -25,21 +25,21 @@ If you are looking for raw speed, use the unsafe version, which outperforms ever
 
 #### Type parameters:
 
-Name | Type | Default | Description |
-:------ | :------ | :------ | :------ |
-`Q` | *unknown* | *unknown*[] | The type of the array-like being provided.   |
-`T` | - | Q[keyof Q] | The type of elements in the array-like being provided.    |
+| Name | Type      | Default     | Description                                            |
+| :--- | :-------- | :---------- | :----------------------------------------------------- |
+| `Q`  | _unknown_ | _unknown_[] | The type of the array-like being provided.             |
+| `T`  | -         | Q[keyof Q]  | The type of elements in the array-like being provided. |
 
 #### Parameters:
 
-Name | Type | Description |
-:------ | :------ | :------ |
-`arr` | Q | The input array-like to map through.   |
-`callback` | *ArrayCBT*<T\> | The callback provided to produce mapped results.                   This iteratee is invoked with three arguments: value, index\|key, and arr.   |
-`thisArg` | *unknown* | The value to use as `this` when executing callback.    |
+| Name       | Type           | Description                                                                                                                 |
+| :--------- | :------------- | :-------------------------------------------------------------------------------------------------------------------------- |
+| `arr`      | Q              | The input array-like to map through.                                                                                        |
+| `callback` | _ArrayCBT_<T\> | The callback provided to produce mapped results. This iteratee is invoked with three arguments: value, index\|key, and arr. |
+| `thisArg`  | _unknown_      | The value to use as `this` when executing callback.                                                                         |
 
 **Returns:** Q
 
 Q - The modified input
 
-Defined in: [safe/array/mapip.ts:28](https://github.com/diced/hikidashi/blob/ec4e1b9/src/safe/array/mapip.ts#L28)
+Defined in: [safe/array/mapip.ts:28](https://github.com/kaihodev/hikidashi/blob/031836f/src/safe/array/mapip.ts#L28)

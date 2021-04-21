@@ -1,7 +1,7 @@
 ---
-id: "identity"
-title: "Function: identity"
-sidebar_label: "identity"
+id: 'identity'
+title: 'Function: identity'
+sidebar_label: 'identity'
 custom_edit_url: null
 hide_title: true
 ---
@@ -14,18 +14,18 @@ Passthrough function returns the first parameter.
 
 #### Type parameters:
 
-Name |
-:------ |
-`T` |
+| Name |
+| :--- |
+| `T`  |
 
 #### Parameters:
 
-Name | Type | Description |
-:------ | :------ | :------ |
-`e` | T | The item to be returned.   |
+| Name | Type | Description              |
+| :--- | :--- | :----------------------- |
+| `e`  | T    | The item to be returned. |
 
 **Returns:** T
 
 T - The parameter input.
 
-Defined in: [safe/util/identity.ts:7](https://github.com/diced/hikidashi/blob/ec4e1b9/src/safe/util/identity.ts#L7)
+Defined in: [safe/util/identity.ts:7](https://github.com/kaihodev/hikidashi/blob/031836f/src/safe/util/identity.ts#L7)
