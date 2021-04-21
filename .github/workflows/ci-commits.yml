@@ -28,5 +28,5 @@ jobs:
         run: yarn install
       - name: 'Commit Lint'
         run: |
-          export COMMIT='$(git log -1 --pretty=format:"%s")'
+          export COMMIT=$(git log -1 --pretty=format:"%s")
           echo $COMMIT | yarn commitlint
