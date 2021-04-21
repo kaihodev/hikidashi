@@ -4,6 +4,7 @@
 *.sublime-project
 *.sublime-workspace
 *.log*
+*.tgz
 .husky
 .github
 yarn.lock
@@ -14,6 +15,8 @@ src
 build
 .docusaurus
 docs
+tests
+coverage
 
 jest.config.ts
 esbuild.config.js
@@ -23,3 +26,6 @@ safe.md
 unsafe.md
 tsconfig.json
 .eslintrc.cjs
+.lintstagedrc.json
+
+run-all-benchmarks.sh

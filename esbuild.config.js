@@ -14,6 +14,7 @@ build(
     {
       entryPoints: glob('src/safe/**/*.ts', { sync: true }),
       outdir: 'dist/safe',
+      outExtension: { '.js': '.mjs' },
     },
     def,
   ),
@@ -24,6 +25,7 @@ build(
     {
       entryPoints: glob('src/unsafe/**/*.ts', { sync: true }),
       outdir: 'dist/unsafe',
+      outExtension: { '.js': '.mjs' },
     },
     def,
   ),
