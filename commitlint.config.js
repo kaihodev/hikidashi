@@ -42,8 +42,8 @@ module.exports = {
         'website',
         'unit',
         'bench',
-        'config'
-      ]
-    ]
+        'config',
+      ],
+    ],
   },
 };

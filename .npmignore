@@ -27,6 +27,6 @@ unsafe.md
 tsconfig.json
 .eslintrc.cjs
 .lintstagedrc.json
-
+commitlint.config.js
 run-all-benchmarks.sh
 CODE_OF_CONDUCT.md
