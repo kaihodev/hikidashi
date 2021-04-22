@@ -32,5 +32,18 @@ module.exports = {
         'test',
       ],
     ],
+    'scope-enum': [
+      1,
+      'always',
+      [
+        'safe',
+        'unsafe',
+        'hooks',
+        'website',
+        'unit',
+        'bench',
+        'config'
+      ]
+    ]
   },
 };
