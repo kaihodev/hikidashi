@@ -5,5 +5,5 @@
  * @param y - The subtrahend.
  * @returns number - The resulting difference.
  */
-const subtract = (x: any, y: any): number => x - y;
+function subtract(x: any, y: any): number { return x - y; }
 export default subtract;

@@ -10,9 +10,9 @@ import { bench } from '../util';
 const jsDivide = (a: any, b: any) => a / b;
 
 bench(
-  { name: 'lodash - divide', fn: () => lodash.divide(5, 2) },
-  { name: 'ramda - divide', fn: () => ramda.divide(5, 2) },
   { name: 'hikidashi safe - divide', fn: () => safeDivide(5, 2) },
   { name: 'hikidashi unsafe - divide', fn: () => unsafeDivide(5, 2) },
+  { name: 'lodash - divide', fn: () => lodash.divide(5, 2) },
+  { name: 'ramda - divide', fn: () => ramda.divide(5, 2) },
   { name: 'js - divide', fn: () => jsDivide(5, 1) },
 );
