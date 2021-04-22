@@ -2,6 +2,8 @@ export type NumberLike = number | string;
 export type ObjArrayLike<T> = { [n: number]: T, length: number };
 export type ArrayLike = Array | Array<unknown> | ObjArrayLike<unknown>;
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export type ArrayReduceCB = ((accum: any, e: any, i: number, arr: ArrayLike) => unknown);
 export type ArrayCB =
   ((e: any, i: number, arr: ArrayLike) => unknown) | // eslint-disable-line @typescript-eslint/no-explicit-any
   ((e: any, i: number) => unknown) | // eslint-disable-line @typescript-eslint/no-explicit-any
