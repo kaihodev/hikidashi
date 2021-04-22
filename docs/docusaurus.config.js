@@ -82,6 +82,9 @@ module.exports = {
       ja: {
         label: '日本語',
       },
+      no: {
+        label: 'Norwegian',
+      },
     },
   },
   presets: [
