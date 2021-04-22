@@ -1,18 +1,18 @@
 ---
-id: 'mapip'
-title: 'Function: mapip'
-sidebar_label: 'mapip'
+id: "mapip"
+title: "Function: mapip"
+sidebar_label: "mapip"
 custom_edit_url: null
 hide_title: true
 ---
 
 # Function: mapip
 
-▸ `Const`**mapip**(`arr`: _any_, `cb`: ArrayCB): _any_
+▸ `Const`**mapip**(`arr`: *any*, `cb`: ArrayCB): *any*
 
-A non-spec compliant fast Array map that _modifies the input array_ and maps in-place.
+A non-spec compliant fast Array map that *modifies the input array* and maps in-place.
 
-**`remarks`**
+**`remarks`** 
 
 This implementation loops in reverse order.
 The mapip function should be used with caution due to its destructive nature.
@@ -22,13 +22,13 @@ The user ID array is not used, but all other traditional map implementations mak
 
 #### Parameters:
 
-| Name  | Type    | Description                                                                                                                 |
-| :---- | :------ | :-------------------------------------------------------------------------------------------------------------------------- |
-| `arr` | _any_   | The input array-like to map through.                                                                                        |
-| `cb`  | ArrayCB | The callback provided to produce mapped results. This iteratee is invoked with three arguments: value, index\|key, and arr. |
+Name | Type | Description |
+:------ | :------ | :------ |
+`arr` | *any* | The input array-like to map through.   |
+`cb` | ArrayCB | The callback provided to produce mapped results. This iteratee is invoked with three arguments: value, index\|key, and arr.    |
 
-**Returns:** _any_
+**Returns:** *any*
 
 typeof arr - The modified input.
 
-Defined in: [unsafe/array/mapip.ts:19](https://github.com/kaihodev/hikidashi/blob/031836f/src/unsafe/array/mapip.ts#L19)
+Defined in: [unsafe/array/mapip.ts:19](https://github.com/kaihodev/hikidashi/blob/ef3ca16/src/unsafe/array/mapip.ts#L19)

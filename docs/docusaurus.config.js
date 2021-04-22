@@ -6,10 +6,30 @@ module.exports = {
   baseUrl: '/hikidashi/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/hikidashi.png',
   organizationName: 'kaihodev',
   projectName: 'hikidashi',
   themeConfig: {
+    image: 'https://opengraph.github.com/repo/kaihodev/hikidashi',
+    metadatas: [
+      { httpEquiv: 'Content-Type', content: 'text/html; charset=utf-8' },
+      { charSet: 'utf-8' },
+      { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
+      { name: 'viewport', content: 'width=device-width, viewport-fit=cover, initial-scale=1' },
+      { name: 'theme-color', content: '#e94b27' },
+      { name: 'og:type', content: 'website' },
+      { name: 'author', content: 'Kaihō Dev' },
+      { name: 'robots', content: 'index, follow' },
+      { name: 'googlebot', content: 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1' },
+      { name: 'bingbot', content: 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1' },
+      // { name: 'og:image', content: 'https://opengraph.github.com/repo/kaihodev/hikidashi' },
+      { name: 'twitter:card', content: 'summary_large_image' },
+
+      { name: 'icon', content: '/hikidashi/img/hikidashi.png' },
+      { name: 'shortcut icon', content: '/hikidashi/img/hikidashi.png' },
+      { name: 'apple-touch-icon', content: '/hikidashi/img/hikidashi.png' },
+      { name: 'msapplication-TileImage', content: '/hikidashi/img/hikidashi.png' },
+    ],
     colorMode: {
       respectPrefersColorScheme: true,
     },
@@ -37,6 +57,10 @@ module.exports = {
           ],
         },
         {
+          type: 'localeDropdown',
+          position: 'right',
+        },
+        {
           href: 'https://github.com/kaihodev/hikidashi',
           label: 'GitHub',
           position: 'right',
@@ -48,6 +72,18 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} Kaihō Dev. Built with Docusaurus & Typedoc.`,
     },
   },
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en' /*, 'ja' */], // eslint-disable-line
+    localeConfigs: {
+      en: {
+        label: 'English',
+      },
+      ja: {
+        label: '日本語',
+      },
+    },
+  },
   presets: [
     [
       '@docusaurus/preset-classic',
@@ -55,7 +91,8 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/kaihodev/hikidashi/edit/master/docs/',
+            'https://github.com/kaihodev/hikidashi/edit/develop/docs/',
+          showLastUpdateTime: true,
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -70,6 +107,9 @@ module.exports = {
         id: 'safe-api',
         entryPoints: ['../src/safe.ts'],
         readme: '../safe.md',
+        readmeTitle: 'Safe Module Overview',
+        globalsTitle: 'Safe Functions',
+        mode: 'library',
         tsconfig: './tsconfig.json',
         out: 'safe',
         allReflectionsHaveOwnDocument: true,
@@ -84,6 +124,8 @@ module.exports = {
         id: 'unsafe-api',
         entryPoints: ['../src/unsafe.ts'],
         readme: '../unsafe.md',
+        readmeTitle: 'Unsafe Module Overview',
+        globalsTitle: 'Unsafe Functions',
         tsconfig: './tsconfig.json',
         out: 'unsafe',
         allReflectionsHaveOwnDocument: true,

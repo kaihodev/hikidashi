@@ -15,6 +15,7 @@ module.exports = [
       "unsafe/functions/modulo",
       "unsafe/functions/multiply",
       "unsafe/functions/noop",
+      "unsafe/functions/reduce",
       "unsafe/functions/remainder",
       "unsafe/functions/subtract"
     ]

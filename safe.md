@@ -9,6 +9,6 @@ Using map in-place with Hikidashi Safe
 ```js
 import map from 'hikidashi/safe/array/mapip.mjs';
 
-const series = map(Array(10).fill(0), x => x * 2);
+const series = map(Array(10).fill(0), (_, x) => x * 2);
 console.log(series);
 ```

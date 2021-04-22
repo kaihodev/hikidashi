@@ -3,6 +3,8 @@ id: 'getting-started'
 title: 'Getting Started'
 slug: '/'
 sidebar_label: 'Getting Started'
+custom_edit_url: null
+image: 'https://opengraph.github.com/repo/kaihodev/hikidashi'
 ---
 
 # Hikidashi
@@ -63,3 +65,7 @@ We like going back to basics with convenient, simple, functional JavaScript. Hik
 - Easy to Use, simple API based on common sense.
 - Fast, lightweight, and built for the new age. (We're usually faster than **every** alternative, see our benchmarks!)
 - Modular, bundler-friendly file structure lets you use only what you need.
+
+<div align="center">
+<img src="https://www.wallpaperflare.com/static/275/491/805/anime-girl-gift-hope-wallpaper-preview.jpg" width="720" />
+</div>

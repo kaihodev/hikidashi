@@ -8,6 +8,6 @@ Using map in-place with Hikidashi Unsafe
 ```js
 import map from 'hikidashi/unsafe/array/mapip.mjs';
 
-const series = map(Array(10).fill(0), x => x * 2);
+const series = map(Array(10).fill(0), (_, x) => x * 2);
 console.log(series);
 ```

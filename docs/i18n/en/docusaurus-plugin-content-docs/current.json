@@ -1,0 +1,26 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.sidebar.category.Hikidashi": {
+    "message": "Hikidashi",
+    "description": "The label for category Hikidashi in sidebar sidebar"
+  },
+  "sidebar.sidebar.category.API Reference": {
+    "message": "API Reference",
+    "description": "The label for category API Reference in sidebar sidebar"
+  },
+  "sidebar.sidebar.category.Safe": {
+    "message": "Safe",
+    "description": "The label for category Safe in sidebar sidebar"
+  },
+  "sidebar.sidebar.category.Functions": {
+    "message": "Functions",
+    "description": "The label for category Functions in sidebar sidebar"
+  },
+  "sidebar.sidebar.category.Unsafe": {
+    "message": "Unsafe",
+    "description": "The label for category Unsafe in sidebar sidebar"
+  }
+}

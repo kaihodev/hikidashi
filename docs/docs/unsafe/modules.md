@@ -23,6 +23,7 @@ hide_title: true
 - [modulo](functions/modulo.md)
 - [multiply](functions/multiply.md)
 - [noop](functions/noop.md)
+- [reduce](functions/reduce.md)
 - [remainder](functions/remainder.md)
 - [subtract](functions/subtract.md)
 

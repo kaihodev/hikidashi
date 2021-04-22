@@ -1,18 +1,18 @@
 ---
-id: 'modulo'
-title: 'Function: modulo'
-sidebar_label: 'modulo'
+id: "modulo"
+title: "Function: modulo"
+sidebar_label: "modulo"
 custom_edit_url: null
 hide_title: true
 ---
 
 # Function: modulo
 
-▸ **modulo**(`x?`: NumberLike, `y?`: NumberLike): _number_
+▸ **modulo**(`x?`: NumberLike, `y?`: NumberLike): *number*
 
 Gets the modulo of dividing two given NumberLikes.
 
-**`remarks`**
+**`remarks`** 
 
 In most languages, ‘%’ is a remainder operator, but in some (e.g. Python, Perl) it is a modulo operator.
 For positive values, the two are equivalent, but when the dividend and divisor are of different signs, they give different results.
@@ -21,13 +21,13 @@ For positive values, the two are equivalent, but when the dividend and divisor a
 
 #### Parameters:
 
-| Name | Type       | Default value | Description   |
-| :--- | :--------- | :------------ | :------------ |
-| `x`  | NumberLike | 1             | The dividend. |
-| `y`  | NumberLike | 1             | The divisor.  |
+Name | Type | Default value | Description |
+:------ | :------ | :------ | :------ |
+`x` | NumberLike | 1 | The dividend.   |
+`y` | NumberLike | 1 | The divisor.   |
 
-**Returns:** _number_
+**Returns:** *number*
 
 number - The resulting modulo.
 
-Defined in: [safe/math/modulo.ts:17](https://github.com/kaihodev/hikidashi/blob/031836f/src/safe/math/modulo.ts#L17)
+Defined in: [safe/math/modulo.ts:17](https://github.com/kaihodev/hikidashi/blob/ef3ca16/src/safe/math/modulo.ts#L17)

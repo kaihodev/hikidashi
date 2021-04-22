@@ -1,0 +1,22 @@
+{
+  "title": {
+    "message": "Hikidashi",
+    "description": "The title in the navbar"
+  },
+  "item.label.API Reference": {
+    "message": "API Reference",
+    "description": "Navbar item with label API Reference"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  },
+  "item.label.Safe API": {
+    "message": "Safe API",
+    "description": "Navbar item with label Safe API"
+  },
+  "item.label.Unsafe API": {
+    "message": "Unsafe API",
+    "description": "Navbar item with label Unsafe API"
+  }
+}

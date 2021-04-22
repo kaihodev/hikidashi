@@ -52,5 +52,5 @@ We like going back to basics with convenient, simple, functional JavaScript. Hik
   * Modular, bundler-friendly file structure lets you use only what you need.
 
 <div align="center">
-<img src="https://www.wallpaperflare.com/static/275/491/805/anime-girl-gift-hope-wallpaper-preview.jpg" width=720 />
+<img src="https://www.wallpaperflare.com/static/275/491/805/anime-girl-gift-hope-wallpaper-preview.jpg" width="720" />
 </div>
