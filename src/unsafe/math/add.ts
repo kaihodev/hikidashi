@@ -11,5 +11,5 @@
  * @param y - The addend.
  * @returns {NumberLike} The result of the addition or concat.
  */
-const add = (x: any, y: any): unknown => x + y;
+function add(x: any, y: any): unknown { return x + y; }
 export default add;

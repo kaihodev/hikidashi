@@ -1,5 +1,6 @@
 import Benchmark, { Event, Suite } from 'benchmark';
 
+Benchmark.options.initCount = 50;
 Benchmark.options.minSamples = 200;
 
 function benchCycle(e: Event) {
