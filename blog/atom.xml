@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://kaihodev.github.io/hikidashi/blog</id>
+    <id>https://hikidashi.js.org/blog</id>
     <title>Hikidashi Blog</title>
     <updated>2015-10-25T23:29:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://kaihodev.github.io/hikidashi/blog"/>
+    <link rel="alternate" href="https://hikidashi.js.org/blog"/>
     <subtitle>Hikidashi Blog</subtitle>
-    <icon>https://kaihodev.github.io/hikidashi/img/hikidashi.png</icon>
+    <icon>https://hikidashi.js.org/img/hikidashi.png</icon>
 </feed>
