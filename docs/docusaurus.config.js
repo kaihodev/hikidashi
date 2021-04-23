@@ -2,7 +2,7 @@
 module.exports = {
   title: 'Hikidashi',
   tagline: 'Convenient, simple, functional JavaScript.',
-  url: 'https://kaihodev.github.io/hikidashi',
+  url: 'https://kaihodev.js.org',
   baseUrl: '/hikidashi/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
