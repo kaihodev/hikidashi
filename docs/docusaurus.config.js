@@ -109,7 +109,7 @@ module.exports = {
       {
         id: 'safe-api',
         entryPoints: ['../src/safe.ts'],
-        readme: '../safe.md',
+        readme: '../SAFE.md',
         readmeTitle: 'Safe Module Overview',
         globalsTitle: 'Safe Functions',
         mode: 'library',
@@ -126,7 +126,7 @@ module.exports = {
       {
         id: 'unsafe-api',
         entryPoints: ['../src/unsafe.ts'],
-        readme: '../unsafe.md',
+        readme: '../UNSAFE.md',
         readmeTitle: 'Unsafe Module Overview',
         globalsTitle: 'Unsafe Functions',
         tsconfig: './tsconfig.json',

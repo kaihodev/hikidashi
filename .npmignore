@@ -22,8 +22,8 @@ jest.config.ts
 esbuild.config.js
 esbuild.test.config.js
 run-all-tests.sh
-safe.md
-unsafe.md
+SAFE.md
+UNSAFE.md
 tsconfig.json
 .eslintrc.cjs
 .lintstagedrc.json
