@@ -7,3 +7,5 @@ export { default as forEach } from './each';
 export { default as filter } from './filter';
 
 export { default as reduce } from './reduce';
+
+export { default as partition } from './partition';
