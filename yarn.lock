@@ -1813,11 +1813,6 @@ es-to-primitive@^1.2.1:
     is-date-object "^1.0.1"
     is-symbol "^1.0.2"
 
-esbuild@^0.11.11:
-  version "0.11.11"
-  resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.11.11.tgz#8f235e0a1a34253a47fd80d51f12084dd98074bd"
-  integrity sha512-iq5YdV63vY/nUAFIvY92BXVkYjMbOchnofLKoLKMPZIa4uuIJAJG9WRA+ZRjQBZbrsORUwvZcANeG2d3p46PJQ==
-
 escalade@^3.1.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/escalade/-/escalade-3.1.1.tgz#d8cfdc7000965c5a0174b4a82eaa5c0552742e40"
@@ -4836,6 +4831,11 @@ table@^6.0.4:
     lodash.truncate "^4.4.2"
     slice-ansi "^4.0.0"
     string-width "^4.2.0"
+
+tateru@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/tateru/-/tateru-0.0.1.tgz#3d1dcc72807eb20b27495e871d067a072be9e5ca"
+  integrity sha512-qn0Nx7m8mmNnHuNO4J9oKhXys2R/hB8qpfbdrTVeSsOkOz1qpSAADmeeKlNpi+H2oiePTOVIUWvwJeijHuSPpg==
 
 terminal-link@^2.0.0:
   version "2.1.1"

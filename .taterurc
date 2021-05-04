@@ -1,0 +1,31 @@
+out_dir = 'dist'
+cjs = true
+
+[safe]
+modules = 'src/safe/**/*.ts'
+out_dir = 'dist/safe'
+ejs = true
+mjs = true
+
+[unsafe]
+modules = 'src/unsafe/**/*.ts'
+out_dir = 'dist/unsafe'
+ejs = true
+mjs = true
+
+[safe_bundle]
+modules = 'src/safe.ts'
+bundle = true
+
+[unsafe_bundle]
+modules = 'src/unsafe.ts'
+bundle = true
+
+[hikidashi_module]
+modules = 'src/index.ts'
+
+
+[tests]
+modules = 'tests/**/*.ts'
+out_dir = 'tests/dist'
+minify = true
