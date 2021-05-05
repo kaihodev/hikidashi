@@ -18,6 +18,7 @@
     "build:main": "tateru safe unsafe safe_bundle unsafe_bundle hikidashi_module",
     "build:types": "tsc -b src",
     "build:test": "tateru tests",
+    "build:bench": "tateru benches",
     "build:mjs": "gen-esm-wrapper dist/index.js dist/index.mjs",
     "test": "jest",
     "test:coverage": "jest --coverage=true",
