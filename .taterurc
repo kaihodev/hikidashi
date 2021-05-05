@@ -26,6 +26,11 @@ modules = 'src/index.ts'
 
 
 [tests]
-modules = 'tests/**/*.ts'
-out_dir = 'tests/dist'
+modules = 'tests/unit/*.ts'
+out_dir = 'tests/dist/unit'
+minify = true
+
+[benches]
+modules = 'tests/benches/*.ts'
+out_dir = 'tests/dist/benches'
 minify = true
