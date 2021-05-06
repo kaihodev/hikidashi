@@ -28,6 +28,8 @@ jobs:
         if: ${{ !steps.cache-restore.outputs.cache-hit }}
         run: yarn install
       - name: 'Build'
-        run: yarn build
+        run: |
+          yarn global add tateru
+          yarn build
       - name: 'Test'
         run: yarn test:coverage
