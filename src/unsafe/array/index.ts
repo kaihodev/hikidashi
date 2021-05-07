@@ -11,3 +11,6 @@ export { default as reduce } from './reduce';
 export { default as partition } from './partition';
 
 export { default as isArithmeticSequence } from './isArithmeticSequence';
+
+export { default as indexOf } from './indexOf';
+export { default as includes } from './includes';
