@@ -4,7 +4,7 @@ import ramda from 'ramda';
 import safeSubtract from '@/safe/math/subtract';
 import unsafeSubtract from '@/unsafe/math/subtract';
 
-import { bench } from '../util';
+import { bench } from 'benchi';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const jsSubtract = (a: any, b: any) => a - b;

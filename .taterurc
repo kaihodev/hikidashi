@@ -22,12 +22,17 @@ modules = 'src/unsafe.ts'
 [hikidashi_module]
 modules = 'src/index.ts'
 
-[tests]
-modules = 'tests/unit/*.ts'
-out_dir = 'tests/dist/unit'
+[safe_tests_bundle]
+modules = 'tests/safe/*/*.ts'
+out_dir = 'tests/dist/safe'
 minify = true
 
-[benches]
-modules = 'tests/benches/*.ts'
-out_dir = 'tests/dist/benches'
+[unsafe_tests_bundle]
+modules = 'tests/unsafe/*/*.ts'
+out_dir = 'tests/dist/unsafe'
+minify = true
+
+[benches_bundle]
+modules = 'benchmarks/*/*.ts'
+out_dir = 'benchmarks/dist'
 minify = true

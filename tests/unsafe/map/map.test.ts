@@ -6,7 +6,7 @@ describe('unsafe map', () => {
   });
 
   test('mapping sparse array with x * 2 should have NaN values in returning array', () => {
-    expect(map([,], (x: number) => x * 2)).toStrictEqual([NaN]);
+    expect(map([,], (x: number) => x * 2)).toStrictEqual([NaN]); // eslint-disable-line no-sparse-arrays, comma-spacing
   });
 
   test('mapping [] with x * 2 should return []', () => {

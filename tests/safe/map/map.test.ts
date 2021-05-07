@@ -5,8 +5,8 @@ describe('safe map', () => {
     expect(map([1, 2, 3], (x: number) => x * 2)).toStrictEqual([2, 4, 6]);
   });
 
-  test('mapping sparse array with x * 2 should return [,]', () => {
-    expect(map([,], (x: number) => x * 2)).toStrictEqual([,]);
+  test('mapping sparse array with x * 2 should return [,,]', () => {
+    expect(map([,,], (x: number) => x * 2)).toStrictEqual([,,]); // eslint-disable-line no-sparse-arrays, comma-spacing
   });
 
   test('mapping [] with x * 2 should return []', () => {

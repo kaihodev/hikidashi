@@ -9,7 +9,7 @@ import unsafeMapip from '@/unsafe/array/mapip';
 
 import add from '@/safe/math/add';
 
-import { bench } from '../util';
+import { bench } from 'benchi';
 
 const cbf = (x: number) => x * 2;
 

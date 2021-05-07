@@ -711,11 +711,6 @@
   dependencies:
     "@babel/types" "^7.3.0"
 
-"@types/benchmark@^2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@types/benchmark/-/benchmark-2.1.0.tgz#157e2ef22311d3140fb33e82a938a1beb26e78e0"
-  integrity sha512-wxT2/LZn4z0NvSfZirxmBx686CU7EXp299KHkIk79acXpQtgeYHrslFzDacPGXifC0Pe3CEaLup07bgY1PnuQw==
-
 "@types/graceful-fs@^4.1.2":
   version "4.1.5"
   resolved "https://registry.yarnpkg.com/@types/graceful-fs/-/graceful-fs-4.1.5.tgz#21ffba0d98da4350db64891f92a9e5db3cdb4e15"
@@ -1188,13 +1183,10 @@ bcrypt-pbkdf@^1.0.0:
   dependencies:
     tweetnacl "^0.14.3"
 
-benchmark@^2.1.4:
-  version "2.1.4"
-  resolved "https://registry.yarnpkg.com/benchmark/-/benchmark-2.1.4.tgz#09f3de31c916425d498cc2ee565a0ebf3c2a5629"
-  integrity sha1-CfPeMckWQl1JjMLuVloOvzwqVik=
-  dependencies:
-    lodash "^4.17.4"
-    platform "^1.3.3"
+benchi@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/benchi/-/benchi-0.0.4.tgz#3b2d88c8872e54ca728eb258b761f3cfbc447b5e"
+  integrity sha512-8KZoCRxZ91TefN/Y/DiIxTsscVDIagcIzaHrhYT5vFlsZabArEh+u2U0pLdUWI5c8bQiXg4hjR9GspN1oNnQBg==
 
 benri@^0.0.0-alpha-0:
   version "0.0.0-alpha-0"
@@ -3519,7 +3511,7 @@ lodash.truncate@^4.4.2:
   resolved "https://registry.yarnpkg.com/lodash.truncate/-/lodash.truncate-4.4.2.tgz#5a350da0b1113b837ecfffd5812cbe58d6eae193"
   integrity sha1-WjUNoLERO4N+z//VgSy+WNbq4ZM=
 
-lodash@4.x, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.21, lodash@^4.17.4, lodash@^4.7.0:
+lodash@4.x, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.21, lodash@^4.7.0:
   version "4.17.21"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
@@ -4081,11 +4073,6 @@ pkg-dir@^4.2.0:
   integrity sha512-HRDzbaKjC+AOWVXxAU/x54COGeIv9eb+6CkDSQoNTt4XyWoIJvuPsXizxu/Fr23EiekbtZwmh1IcIG/l/a10GQ==
   dependencies:
     find-up "^4.0.0"
-
-platform@^1.3.3:
-  version "1.3.6"
-  resolved "https://registry.yarnpkg.com/platform/-/platform-1.3.6.tgz#48b4ce983164b209c2d45a107adb31f473a6e7a7"
-  integrity sha512-fnWVljUchTro6RiCFvCXBbNhJc2NijN7oIQxbwsyL0buWJPG85v81ehlHI9fXrJsMNgTofEoWIQeClKpgxFLrg==
 
 please-upgrade-node@^3.2.0:
   version "3.2.0"
@@ -4832,10 +4819,10 @@ table@^6.0.4:
     slice-ansi "^4.0.0"
     string-width "^4.2.0"
 
-tateru@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/tateru/-/tateru-0.0.3.tgz#7ef5975c22fd8f6c4117d640b18a0884c9223587"
-  integrity sha512-d6Vq15y4zgsTlK/Tn9FIaZs1GVOM2CKM7P90a0/mSyvwONVm5WdWejqKN8q4bRnHxORebkwX6/BRY2GKcZqlmg==
+tateru@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/tateru/-/tateru-0.0.4.tgz#2525fc4c00a9d02816ffe26d444f5abaac36f83b"
+  integrity sha512-1/+9l1CL/tB/aIDFKqWwEasVip9Ho2Ymm07wZUGbQRJtPmxqvPspjg7C9+ImpGeTbTjowbuz44G28xegHrI1iA==
 
 terminal-link@^2.0.0:
   version "2.1.1"

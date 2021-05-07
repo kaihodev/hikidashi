@@ -4,7 +4,7 @@ import ramda from 'ramda';
 import safeDivide from '@/safe/math/divide';
 import unsafeDivide from '@/unsafe/math/divide';
 
-import { bench } from '../util';
+import { bench } from 'benchi';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const jsDivide = (a: any, b: any) => a / b;

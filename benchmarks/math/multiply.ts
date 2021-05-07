@@ -4,7 +4,7 @@ import ramda from 'ramda';
 import safeMultiply from '@/safe/math/multiply';
 import unsafeMultiply from '@/unsafe/math/multiply';
 
-import { bench } from '../util';
+import { bench } from 'benchi';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const jsMultiply = (a: any, b: any) => a * b;

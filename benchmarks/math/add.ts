@@ -4,7 +4,7 @@ import ramda from 'ramda';
 import safeAdd from '@/safe/math/add';
 import unsafeAdd from '@/unsafe/math/add';
 
-import { bench } from '../util';
+import { bench } from 'benchi';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const jsAdd = (a: any, b: any) => a + b;
