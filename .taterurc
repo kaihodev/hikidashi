@@ -23,16 +23,16 @@ modules = 'src/unsafe.ts'
 modules = 'src/index.ts'
 
 [safe_tests_bundle]
-modules = 'tests/safe/*/*.ts'
+modules = 'tests/safe/**/*.ts'
 out_dir = 'tests/dist/safe'
 minify = true
 
 [unsafe_tests_bundle]
-modules = 'tests/unsafe/*/*.ts'
+modules = 'tests/unsafe/**/*.ts'
 out_dir = 'tests/dist/unsafe'
 minify = true
 
 [benches_bundle]
-modules = 'benchmarks/*/*.ts'
+modules = 'benchmarks/**/*.ts'
 out_dir = 'benchmarks/dist'
 minify = true
