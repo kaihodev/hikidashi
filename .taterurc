@@ -1,5 +1,6 @@
 out_dir = 'dist'
 cjs = true
+minify = true
 
 [safe]
 modules = 'src/safe/**/*.ts'
@@ -22,17 +23,17 @@ modules = 'src/unsafe.ts'
 [hikidashi_module]
 modules = 'src/index.ts'
 
+[hikidashi_bundle]
+modules = 'src/*safe/**/index.ts'
+
 [safe_tests_bundle]
 modules = 'tests/safe/**/*.ts'
 out_dir = 'tests/dist/safe'
-minify = true
 
 [unsafe_tests_bundle]
 modules = 'tests/unsafe/**/*.ts'
 out_dir = 'tests/dist/unsafe'
-minify = true
 
 [benches_bundle]
 modules = 'benchmarks/**/*.ts'
 out_dir = 'benchmarks/dist'
-minify = true

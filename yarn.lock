@@ -4819,10 +4819,10 @@ table@^6.0.4:
     slice-ansi "^4.0.0"
     string-width "^4.2.0"
 
-tateru@^0.0.5:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/tateru/-/tateru-0.0.5.tgz#a649e99d2346fe5039891f94af7d2ca02f7fe0f8"
-  integrity sha512-1Hl0Cb3cMC5ZzMrSte3Xyqbs9eohp9kGyoVGIgzlEr9rUedodd7pC9BQlZe1T5fjMkwjtPTCVUKVHf0R0KwPqQ==
+tateru@^0.0.6:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/tateru/-/tateru-0.0.6.tgz#31773b74b054a91c733e565c6e614759ffd41d06"
+  integrity sha512-mT/M8DcFnJ3gU8RGU1cAR1BsAR8gWCT951ogQueDUDdBrxLwIRfVmnJhg1csRId3mD/RVzjYbWC0ESbG5Y4a3w==
 
 terminal-link@^2.0.0:
   version "2.1.1"
@@ -5052,10 +5052,10 @@ typedarray-to-buffer@^3.1.5:
   dependencies:
     is-typedarray "^1.0.0"
 
-typescript@^4.2.3:
-  version "4.2.4"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.2.4.tgz#8610b59747de028fda898a8aef0e103f156d0961"
-  integrity sha512-V+evlYHZnQkaz8TRBuxTA92yZBPotr5H+WhQ7bD3hZUndx5tGOa1fuCgeSjxAzM1RiN5IzvadIXTVefuuwZCRg==
+typescript@4.3.0-beta:
+  version "4.3.0-beta"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.3.0-beta.tgz#8098e7be29032f09827e94b8e3a6befc9ff70c77"
+  integrity sha512-bl3wxSVL6gWLQFa466Vm5Vk3z0BNx+QxWhb9wFiYEHm6H8oqFd8Wo3XjgCVxAa5yiSFFKgo/ngBpXdIwqo5o0A==
 
 unbox-primitive@^1.0.0:
   version "1.0.1"
