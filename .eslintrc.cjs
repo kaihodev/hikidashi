@@ -23,5 +23,7 @@ module.exports = {
     'no-extra-parens': 'off',
     '@typescript-eslint/no-extra-parens': ['error'],
     'valid-jsdoc': 'off',
+    'no-useless-constructor': 'off',
+    '@typescript-eslint/no-useless-constructor': ['error'],
   },
 };

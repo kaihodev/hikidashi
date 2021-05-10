@@ -15,11 +15,12 @@
   },
   "scripts": {
     "build": "run-s build:*",
-    "build:main": "tateru safe unsafe safe_bundle unsafe_bundle hikidashi_module && ls dist",
+    "build:main": "tateru safe unsafe safe_bundle unsafe_bundle hikidashi_module hikidashi_bundle && ls dist",
     "build:types": "tsc -b src",
     "build:test": "tateru safe_tests_bundle unsafe_tests_bundle",
     "build:bench": "tateru benches_bundle",
     "build:mjs": "gen-esm-wrapper dist/index.js dist/index.mjs",
+    "dev": "tateru --watch --smap=\"inline\" & tsc -b -w --preserveWatchOutput src; wait",
     "test": "jest",
     "test:coverage": "jest --coverage=true",
     "bench": "sh run-all-benchmarks.sh",
