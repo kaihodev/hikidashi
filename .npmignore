@@ -16,8 +16,10 @@ build
 .docusaurus
 docs
 tests
+benchmarks
 coverage
 
+.taterurc
 jest.config.ts
 esbuild.config.js
 esbuild.test.config.js
