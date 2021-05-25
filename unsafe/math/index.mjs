@@ -1,0 +1,1 @@
+import{default as e}from"./add";import{default as t}from"./subtract";import{default as f}from"./multiply";import{default as m}from"./divide";import{default as i}from"./remainder";import{default as s}from"./modulo";export{e as add,m as divide,s as modulo,f as multiply,i as remainder,t as subtract};

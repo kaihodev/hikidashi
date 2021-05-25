@@ -1,0 +1,1 @@
+var n=Object.defineProperty;var a=t=>n(t,"__esModule",{value:!0});var f=(t,o)=>{for(var e in o)n(t,e,{get:o[e],enumerable:!0})};a(exports);f(exports,{identity:()=>d,noop:()=>p});var i=t=>t,d=i;var r=()=>{},p=r;0&&(module.exports={identity,noop});
