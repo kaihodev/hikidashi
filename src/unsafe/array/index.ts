@@ -11,6 +11,10 @@ export { default as forEach } from './each';
 export { default as eachLeft } from './eachLeft';
 export { default as eachRight } from './each';
 
+export { default as invokeEach } from './invokeEach';
+export const invokeEachLeft = null;
+export { default as invokeEachRight } from './invokeEach';
+
 export { default as filter } from './filter';
 export { default as filterLeft } from './filter';
 export { default as filterRight } from './filterRight';
