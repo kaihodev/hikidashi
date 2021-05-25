@@ -21,8 +21,6 @@ coverage
 
 .taterurc
 jest.config.ts
-esbuild.config.js
-esbuild.test.config.js
 run-all-tests.sh
 SAFE.md
 UNSAFE.md
