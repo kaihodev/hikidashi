@@ -45,13 +45,10 @@ jobs:
           cd ..
 
       - name: Build Canary
-        env:
-          GOOS: ${{ matrix.os }}
-          GOARCH: ${{ matrix.arch }}
         run: |
           yarn install
           yarn build
-          ls -a | grep -v dist | xargs mv -t dist
+          ls -a | grep -v -E "^dist$|^src$|^\.+$|^\.git$" | xargs mv -t dist
           ls -a dist
 
       - name: Release Canary Build
