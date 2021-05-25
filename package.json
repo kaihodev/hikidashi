@@ -5,14 +5,16 @@
   "repository": "https://github.com/kaihodev/hikidashi",
   "author": "Kaihō Dev",
   "license": "MIT",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "./index.js",
+  "types": "./index.d.ts",
   "exports": {
-    ".": "./dist/index.js",
-    "./safe": "./dist/safe.js",
-    "./unsafe": "./dist/unsafe.js",
+    ".": "./index.js",
+    "./safe": "./safe.js",
+    "./unsafe": "./unsafe.js",
+    "./safe/*": "./safe/*.mjs",
+    "./unsafe/*": "./unsafe/*.mjs",
     "./dist/*": "./dist/*.js",
-    "./*": "./dist/*"
+    "./*": "./*"
   },
   "scripts": {
     "build": "run-s build:*",

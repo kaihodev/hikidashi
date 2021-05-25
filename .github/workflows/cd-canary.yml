@@ -1,0 +1,81 @@
+name: 'CD: Canary'
+
+on:
+  push:
+    branches: [develop]
+
+jobs:
+  gh-release:
+    name: 'Release canary build to GitHub'
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          ssh-key: ${{ secrets.CANARY_DEPLOY }}
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '16.x'
+      - uses: webfactory/ssh-agent@v0.5.0
+        with:
+          ssh-private-key: ${{ secrets.CANARY_DEPLOY }}
+      - name: 'Restore dependency cache'
+        id: cache-restore
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node${{ matrix.node }}-${{ hashFiles('**/yarn.lock') }}
+
+      - name: Setup Git
+        env:
+          USE_SSH: true
+          GIT_USER: ${{ secrets.GH_USER }}
+
+        run: |
+          git config --global user.email '${{ secrets.GH_EMAIL }}'
+          git config --global user.name '${{ secrets.GH_USER }}'
+          mkdir dist
+          cd ./dist
+          git init
+          git remote add origin git@github.com:${{ secrets.GH_USER }}/hikidashi.git
+          git checkout -b canary
+          git pull origin canary
+          git branch --set-upstream-to=origin/canary canary
+          cd ..
+
+      - name: Build Canary
+        env:
+          GOOS: ${{ matrix.os }}
+          GOARCH: ${{ matrix.arch }}
+        run: |
+          yarn install
+          yarn build
+          mv -n ./* ./dist/
+          ls dist
+
+      - name: Release Canary Build
+        env:
+          USE_SSH: true
+          GIT_USER: ${{ secrets.GH_USER }}
+        run: |
+          cd ./dist
+          rm .gitignore
+          cp .npmignore .gitignore
+          git add --all
+
+          if [[ $(git diff --stat --staged) != '' ]]; then
+            git commit -m "Deploy canary - based on ${{ github.sha }}"
+            export failed=0
+            (git pull origin canary && git push --set-upstream origin canary) || export failed="1"
+            while [ "$failed" = "1" ]
+            do
+              if (sleep 3 && git pull origin canary && git push --set-upstream origin canary && export success="1"); then
+                break
+              else
+                echo "retrying push..."
+              fi
+            done
+          else
+            echo "WD clean"
+          fi
