@@ -51,8 +51,8 @@ jobs:
         run: |
           yarn install
           yarn build
-          ls | grep -v dist | xargs mv -t dist
-          ls dist
+          ls -a | grep -v dist | xargs mv -t dist
+          ls -a dist
 
       - name: Release Canary Build
         env:
