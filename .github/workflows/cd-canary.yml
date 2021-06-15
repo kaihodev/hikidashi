@@ -55,6 +55,7 @@ jobs:
         env:
           USE_SSH: true
           GIT_USER: ${{ secrets.GH_USER }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
           cd ./dist
           rm .gitignore
@@ -73,6 +74,8 @@ jobs:
                 echo "retrying push..."
               fi
             done
+            echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc"
+            yarn publish --tag canary --new-version `node -e "process.stdout.write(require('./package.json').version)"`-${{ github.sha }}
           else
             echo "WD clean"
           fi
