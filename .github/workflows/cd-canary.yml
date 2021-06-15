@@ -6,7 +6,7 @@ on:
 
 jobs:
   gh-release:
-    name: 'Release canary build to GitHub'
+    name: 'Release canary build to GitHub and NPM'
     if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     steps:
@@ -74,7 +74,7 @@ jobs:
                 echo "retrying push..."
               fi
             done
-            echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc"
+            echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
             yarn publish --tag canary --new-version `node -e "process.stdout.write(require('./package.json').version)"`-${{ github.sha }}
           else
             echo "WD clean"
