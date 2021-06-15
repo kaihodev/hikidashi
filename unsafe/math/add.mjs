@@ -1,1 +1,1 @@
-function t(n,a){return n+a}var d=t;export{d as default};
+function t(n,a){return n+a}var u=t;export{u as default};

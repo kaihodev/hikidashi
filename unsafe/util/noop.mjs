@@ -1,1 +1,1 @@
-const o=()=>{};var d=o;export{d as default};
+const o=()=>{};var t=o;export{t as default};

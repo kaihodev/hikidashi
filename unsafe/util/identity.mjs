@@ -1,1 +1,1 @@
-const e=t=>t;var o=e;export{o as default};
+const e=t=>t;var n=e;export{n as default};

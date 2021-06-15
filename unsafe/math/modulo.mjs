@@ -1,1 +1,1 @@
-function r(n,e){return(n%e+n)%e}var t=r;export{t as default};
+function r(n,e){return(n%e+n)%e}var a=r;export{a as default};

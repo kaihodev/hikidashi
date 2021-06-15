@@ -1,1 +1,1 @@
-const a=(e,n)=>e/n;var t=a;export{t as default};
+const a=(e,n)=>e/n;var d=a;export{d as default};
