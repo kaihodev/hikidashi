@@ -27,7 +27,6 @@
     "test": "jest",
     "test:coverage": "jest --coverage=true",
     "bench": "sh run-all-benchmarks.sh",
-    "prepack": "run-s \"build:?(main|types|mjs)\"",
     "postinstall": "husky install",
     "prepublish": "git config --unset core.hooksPath || echo 'clean'"
   },
