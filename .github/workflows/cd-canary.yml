@@ -40,6 +40,7 @@ jobs:
           git init
           git remote add origin git@github.com:${{ secrets.GH_USER }}/hikidashi.git
           git checkout -b canary
+          git config pull.rebase false
           git pull origin canary
           git branch --set-upstream-to=origin/canary canary
           cd ..
