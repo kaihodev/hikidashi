@@ -29,7 +29,7 @@
     "bench": "sh run-all-benchmarks.sh",
     "prepack": "run-s \"build:?(main|types|mjs)\"",
     "postinstall": "husky install",
-    "prepublish": "git config --unset core.hooksPath"
+    "prepublish": "git config --unset core.hooksPath || echo 'clean'"
   },
   "dependencies": {},
   "devDependencies": {
