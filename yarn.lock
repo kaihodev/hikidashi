@@ -4819,10 +4819,10 @@ table@^6.0.4:
     slice-ansi "^4.0.0"
     string-width "^4.2.0"
 
-tateru@^0.0.7:
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/tateru/-/tateru-0.0.7.tgz#70aee8e54e790b46aadac83158a26352b4002736"
-  integrity sha512-B3C/vq1jBX3HwSy20luDkJVty/ss2A+KMfL/W/5Ny2W4YLJoBzQVId8attTjuZC9ocDnraFBKWijxUw7nBLicg==
+tateru@^0.0.9:
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/tateru/-/tateru-0.0.9.tgz#a899b21a8efcb5d0d0cede9e96b323819e444be7"
+  integrity sha512-NRx48P/YT2vW4Zg5U1tSb3d+kF0OtgZbyMj31xlfCArQPq87jX7XEiRuRRa0P1ohgk0FpgUuOQVco5oIK2tNpw==
 
 terminal-link@^2.0.0:
   version "2.1.1"
