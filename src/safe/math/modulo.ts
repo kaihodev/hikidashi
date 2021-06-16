@@ -18,7 +18,7 @@ function modulo(x: NumberLike = 1, y: NumberLike = 1): number {
   x = +x;
   y = +y;
   // eslint-disable-next-line @typescript-eslint/no-extra-parens
-  return ((x % y) + x) % y;
+  return ((x % y) + x) % x;
 }
 
 export default modulo;
