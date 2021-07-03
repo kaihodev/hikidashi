@@ -1,1 +1,1 @@
-const u=(e,d,c)=>{let n=c===void 0,t=e.length,r=n?e[0]:c;for(;++n!==t;)r=d(r,e[n],n,e);return r};var y=u;export{y as default};
+const c=(e,t,d=void 0)=>{let n=+(d===void 0),u=e.length,r=n?e[0]:d;if(!u)return r;for(;n!==u;)r=t(r,e[n],n++,e);return r};var i=c;export{i as default};
