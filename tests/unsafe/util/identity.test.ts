@@ -1,6 +1,8 @@
-import { identity } from '@/unsafe';
+import i from '@/unsafe/util/identity';
+import { identity as i2 } from '@/unsafe';
+import { unsafe } from '@';
 
-describe('safe identity', () => {
+describe.each([i, i2, unsafe.identity])('%# - unsafe identity', identity => {
   test('identity of 1 should return 1', () => {
     expect(identity(1)).toBe(1);
   });

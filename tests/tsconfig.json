@@ -1,6 +1,15 @@
 {
   "extends": "../tsconfig.json",
   "compilerOptions": {
-    "allowJs": true
+    "allowJs": true,
+    "baseUrl": ".",
+    "paths": {
+      "@": ["../dist/index"],
+      "@/safe": ["../dist/safe"],
+      "@/unsafe": ["../dist/unsafe"],
+      "@/safe/*": ["../src/safe/*"],
+      "@/unsafe/*": ["../src/unsafe/*"],
+      "@/shared/*": ["../src/shared/*"]
+    }
   }
 }

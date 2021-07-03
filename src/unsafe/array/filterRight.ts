@@ -15,9 +15,9 @@ import type { ArrayLike, ArrayCB } from '@/shared/generics';
  */
 export default function filterRight(arr: ArrayLike, cb: ArrayCB): typeof arr {
   let i = arr.length, result = Array(i); // eslint-disable-line prefer-const
-  for (var e, c = -1; i--;) { // eslint-disable-line no-var
+  for (var e, c = 0; i--;) { // eslint-disable-line no-var
     e = arr[i];
-    if (cb(e, i, arr)) result[++c] = e; // eslint-disable-line callback-return
+    if (cb(e, i, arr)) result[c++] = e; // eslint-disable-line callback-return
   }
   result.length = c;
   return result;

@@ -1,6 +1,8 @@
-import { map } from '@/safe';
+import m from '@/safe/array/map';
+import { map as m2 } from '@/safe';
+import { safe } from '@';
 
-describe('safe map', () => {
+describe.each([m, m2, safe.map])('%# - safe map', map => {
   test('mapping [1, 2, 3] with x * 2 should return [2, 4, 6]', () => {
     expect(map([1, 2, 3], (x: number) => x * 2)).toStrictEqual([2, 4, 6]);
   });

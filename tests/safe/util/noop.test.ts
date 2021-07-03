@@ -1,6 +1,8 @@
-import { noop } from '@/safe';
+import n from '@/safe/util/noop';
+import { noop as n2 } from '@/safe';
+import { safe } from '@';
 
-describe('safe noop', () => {
+describe.each([n, n2, safe.noop])('%# - safe noop', noop => {
   test('noop of one argument should return nothing', () => {
     expect(noop(1)).toBeUndefined();
   });

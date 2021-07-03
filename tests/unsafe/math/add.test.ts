@@ -1,6 +1,8 @@
-import { add } from '@/unsafe';
+import a from '@/unsafe/math/add';
+import { add as a2 } from '@/unsafe';
+import { unsafe } from '@';
 
-describe('unsafe add', () => {
+describe.each([a, a2, unsafe.add])('%# - unsafe add', add => {
   test('add default arg values to be NaN', () => {
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore

@@ -26,14 +26,18 @@ modules = 'src/index.ts'
 [hikidashi_bundle]
 modules = 'src/*safe/**/index.ts'
 
-[safe_tests_bundle]
+[export_tests]
+modules = 'tests/*.test.*'
+out_dir = 'tests/dist/'
+
+[safe_tests]
 modules = 'tests/safe/**/*.ts'
 out_dir = 'tests/dist/safe'
 
-[unsafe_tests_bundle]
+[unsafe_tests]
 modules = 'tests/unsafe/**/*.ts'
 out_dir = 'tests/dist/unsafe'
 
 [benches_bundle]
-modules = 'benchmarks/**/*.ts'
-out_dir = 'benchmarks/dist'
+modules = '*/*.ts'
+out_dir = 'dist'

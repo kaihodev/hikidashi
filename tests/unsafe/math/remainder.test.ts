@@ -1,6 +1,8 @@
-import { remainder } from '@/unsafe';
+import r from '@/unsafe/math/remainder';
+import { remainder as r2 } from '@/unsafe';
+import { unsafe } from '@';
 
-describe('unsafe remainder', () => {
+describe.each([r, r2, unsafe.remainder])('%# - unsafe remainder', remainder => {
   test('remainder default arg values to equal 0', () => {
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore

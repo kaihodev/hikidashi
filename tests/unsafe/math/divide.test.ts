@@ -1,6 +1,8 @@
-import { divide } from '@/unsafe';
+import d from '@/unsafe/math/divide';
+import { divide as d2 } from '@/unsafe';
+import { unsafe } from '@';
 
-describe('unsafe divide', () => {
+describe.each([d, d2, unsafe.divide])('%# - unsafe divide', divide => {
   test('divide default arg values to equal 1', () => {
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore

@@ -1,6 +1,8 @@
-import { remainder } from '@/safe';
+import r from '@/safe/math/remainder';
+import { remainder as r2 } from '@/safe';
+import { safe } from '@';
 
-describe('safe remainder', () => {
+describe.each([r, r2, safe.remainder])('%# - safe remainder', remainder => {
   test('remainder default arg values to equal 0', () => {
     expect(remainder()).toBe(0);
   });

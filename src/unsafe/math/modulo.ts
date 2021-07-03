@@ -14,7 +14,7 @@
  */
 function remainder(x: any, y: any): number {
   // eslint-disable-next-line @typescript-eslint/no-extra-parens
-  return ((x % y) + x) % y;
+  return ((x % y) + y) % y;
 }
 
 export default remainder;

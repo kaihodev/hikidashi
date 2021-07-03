@@ -1,6 +1,8 @@
-import { subtract } from '@/safe';
+import s from '@/safe/math/subtract';
+import { subtract as s2 } from '@/safe';
+import { safe } from '@';
 
-describe('safe subtract', () => {
+describe.each([s, s2, safe.subtract])('%# - safe subtract', subtract => {
   test('subtract default arg values to equal 0', () => {
     expect(subtract()).toBe(0);
   });

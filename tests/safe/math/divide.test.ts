@@ -1,6 +1,8 @@
-import { divide } from '@/safe';
+import d from '@/safe/math/divide';
+import { divide as d2 } from '@/safe';
+import { safe } from '@';
 
-describe('safe divide', () => {
+describe.each([d, d2, safe.divide])('%# - safe divide', divide => {
   test('divide default arg values to equal 1', () => {
     expect(divide()).toBe(1);
   });

@@ -1,0 +1,30 @@
+{
+  "name": "hikidashi-benchmarks",
+  "version": "0.0.3",
+  "private": false,
+  "repository": "https://github.com/kaihodev/hikidashi/tree/develop/benchmarks",
+  "author": "Kaihō Dev",
+  "license": "MIT",
+  "scripts": {
+    "build": "tateru benches_bundle",
+    "dev": "tateru --loglevel=2 --watch --smap=\"inline\" benches_bundle"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/lodash": "^4.14.168",
+    "@types/node": "^15.12.2",
+    "@types/ramda": "^0.27.40",
+    "@types/underscore": "^1.11.1",
+    "benchi": "^0.0.4",
+    "benri": "^0.0.0-alpha-0",
+    "lodash": "^4.17.21",
+    "ramda": "^0.27.1",
+    "tateru": "^0.0.9",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.3",
+    "underscore": "^1.13.1"
+  },
+  "browserslist": [
+    "> 0%"
+  ]
+}

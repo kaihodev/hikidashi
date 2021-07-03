@@ -4,10 +4,10 @@
 *.sublime-project
 *.sublime-workspace
 *.log*
-yarn.lock
+
 package-lock.json
 .husky/_
-.husky/.gitignore 
+.husky/.gitignore
 
 node_modules
 dist

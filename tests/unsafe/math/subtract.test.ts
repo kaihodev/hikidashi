@@ -1,6 +1,8 @@
-import { subtract } from '@/unsafe';
+import s from '@/unsafe/math/subtract';
+import { subtract as s2 } from '@/unsafe';
+import { unsafe } from '@';
 
-describe('unsafe subtract', () => {
+describe.each([s, s2, unsafe.subtract])('%# - unsafe subtract', subtract => {
   test('subtract default arg values to equal 0', () => {
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore

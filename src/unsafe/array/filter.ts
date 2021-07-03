@@ -11,10 +11,7 @@ import type { ArrayLike, ArrayCB } from '@/shared/generics';
  */
 const filter = (arr: ArrayLike, cb: ArrayCB): typeof arr => {
   const L = arr.length, result = Array(L);
-  for (var e, c = -1, i = 0; i !== L; ++i) { // eslint-disable-line no-var
-    e = arr[i];
-    if (cb(e, i, arr)) result[++c] = e; // eslint-disable-line callback-return
-  }
+  for (var e, c = 0, i = 0; i !== L; ++i) if (cb(e = arr[i], i, arr)) result[c++] = e; // eslint-disable-line callback-return, no-var
   result.length = c;
   return result;
 };

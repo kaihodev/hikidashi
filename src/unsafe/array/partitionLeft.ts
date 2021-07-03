@@ -16,7 +16,7 @@ import type { ArrayLike, ArrayCB } from '@/shared/generics';
 function partitionLeft(arr: ArrayLike, cb: ArrayCB): (typeof arr)[] {
   const result = [[], []];
   // eslint-disable-next-line callback-return
-  for (let a, e, i = arr.length; i--; (a[a.length] as any) = e) a = result[cb(e = arr[i], i, arr) as any] ||= [];
+  for (let a, e, i = 0, L = arr.length; i !== L; (a[a.length] as any) = e) a = result[cb(e = arr[i], i++, arr) as any] ||= [];
   return result;
 }
 export default partitionLeft;

@@ -1,6 +1,8 @@
-import { multiply } from '@/unsafe';
+import m from '@/unsafe/math/multiply';
+import { multiply as m2 } from '@/unsafe';
+import { unsafe } from '@';
 
-describe('unsafe multiply', () => {
+describe.each([m, m2, unsafe.multiply])('%# - unsafe multiply', multiply => {
   test('multiply default arg values to equal 1', () => {
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore

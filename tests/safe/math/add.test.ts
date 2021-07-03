@@ -1,6 +1,8 @@
-import { add } from '@/safe';
+import a from '@/safe/math/add';
+import { add as a2 } from '@/safe';
+import { safe } from '@';
 
-describe('safe add', () => {
+describe.each([a, a2, safe.add])('%# - safe add', add => {
   test('add default arg values to equal 0', () => {
     expect(add()).toBe(0);
   });

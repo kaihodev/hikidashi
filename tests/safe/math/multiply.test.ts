@@ -1,6 +1,8 @@
-import { multiply } from '@/safe';
+import m from '@/safe/math/multiply';
+import { multiply as m2 } from '@/safe';
+import { safe } from '@';
 
-describe('safe multiply', () => {
+describe.each([m, m2, safe.multiply])('%# - safe multiply', multiply => {
   test('multiply default arg values to equal 1', () => {
     expect(multiply()).toBe(1);
   });
