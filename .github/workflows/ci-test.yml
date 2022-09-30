@@ -10,7 +10,7 @@ jobs:
         shell: bash
     strategy:
       matrix:
-        node: [15, 16]
+        node: [16, 18]
     steps:
       - name: 'Checkout repository'
         uses: actions/checkout@v2

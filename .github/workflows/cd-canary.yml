@@ -16,7 +16,7 @@ jobs:
           ssh-key: ${{ secrets.CANARY_DEPLOY }}
       - uses: actions/setup-node@v1
         with:
-          node-version: '16.x'
+          node-version: '18.x'
       - uses: webfactory/ssh-agent@v0.5.0
         with:
           ssh-private-key: ${{ secrets.CANARY_DEPLOY }}

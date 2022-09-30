@@ -1,5 +1,5 @@
 import lodash from 'lodash';
-import ramda from 'ramda';
+import * as ramda from 'ramda';
 import underscore from 'underscore';
 
 import safeMap from '@/safe/array/map';

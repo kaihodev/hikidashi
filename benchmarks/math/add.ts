@@ -1,5 +1,5 @@
 import lodash from 'lodash';
-import ramda from 'ramda';
+import * as ramda from 'ramda';
 
 import safeAdd from '@/safe/math/add';
 import unsafeAdd from '@/unsafe/math/add';
