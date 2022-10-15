@@ -18,7 +18,7 @@ export { default as reduce } from './reduce';
 export { default as reduceLeft } from './reduce';
 export declare const reduceRight: null;
 export { default as partition } from './partition';
-export { default as partitionLeft } from './partition';
+export { default as partitionLeft } from './partitionLeft';
 export { default as partitionRight } from './partition';
 export { default as isArithmeticSequence } from './isArithmeticSequence';
 export { default as indexOf } from './indexOf';

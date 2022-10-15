@@ -11,5 +11,5 @@ import type { ArrayLike, ArrayReduceCB } from '@/shared/generics';
  *
  * @returns unknown[] - The new mapped array.
  */
-declare const reduce: (arr: ArrayLike, cb: ArrayReduceCB, initValue: any) => unknown[];
+declare const reduce: (arr: ArrayLike, cb: ArrayReduceCB, initValue?: any) => unknown[];
 export default reduce;
