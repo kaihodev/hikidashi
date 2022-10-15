@@ -1,5 +1,5 @@
 import lodash from 'lodash';
-import ramda from 'ramda';
+import * as ramda from 'ramda';
 import underscore from 'underscore';
 
 import safeMap from '@/safe/array/map';
@@ -40,7 +40,7 @@ bench(
   { name: '100 js - map', fn: () => jsMap(array, cbf) },
 );
 
-array = safeMap(Array(100).fill(0), add);
+array = safeMap(Array(1000).fill(0), add);
 bench(
   { name: '1000 hikidashi safe - map', fn: () => safeMap(array, cbf) },
   { name: '1000 hikidashi unsafe - map', fn: () => unsafeMap(array, cbf) },
