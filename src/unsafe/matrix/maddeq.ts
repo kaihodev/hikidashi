@@ -15,8 +15,8 @@ import type { ArrayLike } from '@/shared/generics';
  * @returns typeof a - The modified input.
  */
 const maddeq = (a: ArrayLike, b: ArrayLike): typeof arr => {
-  let i = arr.length;
+  let i = a.length;
   while (i--) a[i] += b[i];
-  return arr;
+  return a;
 };
 export default maddeq;
