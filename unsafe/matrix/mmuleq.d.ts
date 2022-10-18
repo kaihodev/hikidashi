@@ -1,11 +1,11 @@
 import type { ArrayLike } from '@/shared/generics';
 /**
- * Subtracts two arrays back into and *modifying the first array* as if a -= b.
+ * Multiplies two arrays back into and *modifying the first array* as if a -= b.
  *
  * @remarks
  *
  * This implementation loops in reverse order.
- * The msubeq function should be used with caution due to its destructive nature.
+ * The mmuleq function should be used with caution due to its destructive nature.
  * We implicitly assume that the second array contains at least as many elements as the first.
  *
  * @param a - The minuend, first input array-like to subtract and modify.
@@ -13,5 +13,5 @@ import type { ArrayLike } from '@/shared/generics';
  *
  * @returns typeof a - The modified input.
  */
-declare const msubeq: (a: ArrayLike, b: ArrayLike) => any;
-export default msubeq;
+declare const mmuleq: (a: ArrayLike, b: ArrayLike) => any;
+export default mmuleq;
