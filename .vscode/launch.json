@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "command": "yarn test",
+            "name": "Run yarn test",
+            "request": "launch",
+            "type": "node-terminal",
+            "preLaunchTask": "npm: build"
+        }
+    ]
+}
