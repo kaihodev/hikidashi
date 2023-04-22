@@ -1,4 +1,4 @@
-import Sampler from './Sampler';
+import Sampler from './Sampler.js';
 
 export default class ArraySampler extends Sampler {
   static sample<T>(arr: T[], fromIndex = 0, toIndex = 0): T {
