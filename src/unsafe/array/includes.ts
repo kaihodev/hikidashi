@@ -1,5 +1,5 @@
 import type { ArrayLike } from '@/shared/generics';
-import indexOf from './indexOf';
+import indexOf from './indexOf.js';
 
 /**
  * A non-spec compliant utility function to check if an Array includes something.

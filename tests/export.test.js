@@ -1,7 +1,7 @@
 let unsafe;
 try {
   unsafe = require('../dist/unsafe.js');
-} catch (_) {
+} catch {
   unsafe = require('../../dist/unsafe.js');
 }
 
