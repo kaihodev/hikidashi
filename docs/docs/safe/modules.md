@@ -1,23 +1,19 @@
 ---
 id: "modules"
 title: "hikidashi"
-sidebar_label: "Table of contents"
-hide_table_of_contents: true
+sidebar_label: "Exports"
+sidebar_position: 0.5
 custom_edit_url: null
-hide_title: true
 ---
 
-# hikidashi
-
-## Table of contents
-
-### Functions
+## Functions
 
 - [add](functions/add.md)
 - [divide](functions/divide.md)
 - [each](functions/each.md)
 - [filter](functions/filter.md)
 - [identity](functions/identity.md)
+- [isArithmeticSequence](functions/isArithmeticSequence.md)
 - [map](functions/map.md)
 - [mapip](functions/mapip.md)
 - [modulo](functions/modulo.md)
@@ -30,4 +26,4 @@ hide_title: true
 
 ### forEach
 
-Renames and exports: [each](functions/each.md)
+Renames and re-exports [each](functions/each.md)

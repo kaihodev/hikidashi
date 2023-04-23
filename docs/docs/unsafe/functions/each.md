@@ -2,29 +2,31 @@
 id: "each"
 title: "Function: each"
 sidebar_label: "each"
+sidebar_position: 0
 custom_edit_url: null
-hide_title: true
 ---
 
-# Function: each
-
-▸ `Const`**each**(`arr`: *any*, `cb`: ArrayCB): *void*
+▸ **each**(`arr`, `cb`): `void`
 
 A non-spec compliant fast Array forEach.
 
-**`remarks`** 
+**`Remarks`**
 
 This implementation loops in reverse order.
 
-#### Parameters:
+#### Parameters
 
-Name | Type | Description |
-:------ | :------ | :------ |
-`arr` | *any* | The input array-like to loop through.   |
-`cb` | ArrayCB | The callback provided. This iteratee is invoked with three arguments: value, index\|key, and arr.    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `arr` | `any` | The input array-like to loop through. |
+| `cb` | `ArrayCB` | The callback provided. This iteratee is invoked with three arguments: value, index\|key, and arr. |
 
-**Returns:** *void*
+#### Returns
+
+`void`
 
 void
 
-Defined in: [unsafe/array/each.ts:15](https://github.com/kaihodev/hikidashi/blob/ef3ca16/src/unsafe/array/each.ts#L15)
+#### Defined in
+
+[unsafe/array/each.ts:15](https://github.com/axisiscool/hikidashi/blob/6610d16/src/unsafe/array/each.ts#L15)

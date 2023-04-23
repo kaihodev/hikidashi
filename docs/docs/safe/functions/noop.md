@@ -2,24 +2,26 @@
 id: "noop"
 title: "Function: noop"
 sidebar_label: "noop"
+sidebar_position: 0
 custom_edit_url: null
-hide_title: true
 ---
 
-# Function: noop
-
-▸ **noop**(...`args`: ArrayLike): *void*
+▸ **noop**(...`args`): `void`
 
 Noop function that does nothing.
 
-#### Parameters:
+#### Parameters
 
-Name | Type | Description |
-:------ | :------ | :------ |
-`...args` | ArrayLike | optional params   |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `...args` | `any` | optional params |
 
-**Returns:** *void*
+#### Returns
+
+`void`
 
 void
 
-Defined in: [safe/util/noop.ts:9](https://github.com/kaihodev/hikidashi/blob/ef3ca16/src/safe/util/noop.ts#L9)
+#### Defined in
+
+[safe/util/noop.ts:9](https://github.com/axisiscool/hikidashi/blob/6610d16/src/safe/util/noop.ts#L9)

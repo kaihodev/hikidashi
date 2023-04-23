@@ -2,25 +2,27 @@
 id: "multiply"
 title: "Function: multiply"
 sidebar_label: "multiply"
+sidebar_position: 0
 custom_edit_url: null
-hide_title: true
 ---
 
-# Function: multiply
-
-▸ **multiply**(`x?`: NumberLike, `y?`: NumberLike): *number*
+▸ **multiply**(`x?`, `y?`): `number`
 
 Multiplies two given NumberLikes.
 
-#### Parameters:
+#### Parameters
 
-Name | Type | Default value | Description |
-:------ | :------ | :------ | :------ |
-`x` | NumberLike | 1 | The multiplier.   |
-`y` | NumberLike | 1 | The multiplicand.   |
+| Name | Type | Default value | Description |
+| :------ | :------ | :------ | :------ |
+| `x` | `NumberLike` | `1` | The multiplier. |
+| `y` | `NumberLike` | `1` | The multiplicand. |
 
-**Returns:** *number*
+#### Returns
+
+`number`
 
 number - The resulting product.
 
-Defined in: [safe/math/multiply.ts:10](https://github.com/kaihodev/hikidashi/blob/ef3ca16/src/safe/math/multiply.ts#L10)
+#### Defined in
+
+[safe/math/multiply.ts:10](https://github.com/axisiscool/hikidashi/blob/6610d16/src/safe/math/multiply.ts#L10)

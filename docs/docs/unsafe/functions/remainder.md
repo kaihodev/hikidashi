@@ -2,25 +2,27 @@
 id: "remainder"
 title: "Function: remainder"
 sidebar_label: "remainder"
+sidebar_position: 0
 custom_edit_url: null
-hide_title: true
 ---
 
-# Function: remainder
-
-▸ **remainder**(`x`: *any*, `y`: *any*): *number*
+▸ **remainder**(`x`, `y`): `number`
 
 Gets the remainder of dividing two given NumberLikes.
 
-#### Parameters:
+#### Parameters
 
-Name | Type | Description |
-:------ | :------ | :------ |
-`x` | *any* | The dividend.   |
-`y` | *any* | The divisor.   |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `x` | `any` | The dividend. |
+| `y` | `any` | The divisor. |
 
-**Returns:** *number*
+#### Returns
+
+`number`
 
 number - The resulting remainder.
 
-Defined in: [unsafe/math/remainder.ts:8](https://github.com/kaihodev/hikidashi/blob/ef3ca16/src/unsafe/math/remainder.ts#L8)
+#### Defined in
+
+[unsafe/math/remainder.ts:8](https://github.com/axisiscool/hikidashi/blob/6610d16/src/unsafe/math/remainder.ts#L8)
