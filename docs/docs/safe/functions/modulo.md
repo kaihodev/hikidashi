@@ -2,32 +2,36 @@
 id: "modulo"
 title: "Function: modulo"
 sidebar_label: "modulo"
+sidebar_position: 0
 custom_edit_url: null
-hide_title: true
 ---
 
-# Function: modulo
-
-▸ **modulo**(`x?`: NumberLike, `y?`: NumberLike): *number*
+▸ **modulo**(`x?`, `y?`): `number`
 
 Gets the modulo of dividing two given NumberLikes.
 
-**`remarks`** 
+**`Remarks`**
 
 In most languages, ‘%’ is a remainder operator, but in some (e.g. Python, Perl) it is a modulo operator.
 For positive values, the two are equivalent, but when the dividend and divisor are of different signs, they give different results.
 
-**`see`** https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder
+**`See`**
 
-#### Parameters:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder
 
-Name | Type | Default value | Description |
-:------ | :------ | :------ | :------ |
-`x` | NumberLike | 1 | The dividend.   |
-`y` | NumberLike | 1 | The divisor.   |
+#### Parameters
 
-**Returns:** *number*
+| Name | Type | Default value | Description |
+| :------ | :------ | :------ | :------ |
+| `x` | `NumberLike` | `1` | The dividend. |
+| `y` | `NumberLike` | `1` | The divisor. |
+
+#### Returns
+
+`number`
 
 number - The resulting modulo.
 
-Defined in: [safe/math/modulo.ts:17](https://github.com/kaihodev/hikidashi/blob/ef3ca16/src/safe/math/modulo.ts#L17)
+#### Defined in
+
+[safe/math/modulo.ts:17](https://github.com/axisiscool/hikidashi/blob/6610d16/src/safe/math/modulo.ts#L17)

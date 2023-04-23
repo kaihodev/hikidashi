@@ -2,25 +2,27 @@
 id: "multiply"
 title: "Function: multiply"
 sidebar_label: "multiply"
+sidebar_position: 0
 custom_edit_url: null
-hide_title: true
 ---
 
-# Function: multiply
-
-▸ `Const`**multiply**(`x`: *any*, `y`: *any*): *number*
+▸ **multiply**(`x`, `y`): `number`
 
 Multiplies two given inputs using the built-in operator*.
 
-#### Parameters:
+#### Parameters
 
-Name | Type | Description |
-:------ | :------ | :------ |
-`x` | *any* | The multiplier.   |
-`y` | *any* | The multiplicand.   |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `x` | `any` | The multiplier. |
+| `y` | `any` | The multiplicand. |
 
-**Returns:** *number*
+#### Returns
+
+`number`
 
 The resulting product.
 
-Defined in: [unsafe/math/multiply.ts:8](https://github.com/kaihodev/hikidashi/blob/ef3ca16/src/unsafe/math/multiply.ts#L8)
+#### Defined in
+
+[unsafe/math/multiply.ts:8](https://github.com/axisiscool/hikidashi/blob/6610d16/src/unsafe/math/multiply.ts#L8)

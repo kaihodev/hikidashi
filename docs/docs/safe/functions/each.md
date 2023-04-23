@@ -2,39 +2,43 @@
 id: "each"
 title: "Function: each"
 sidebar_label: "each"
+sidebar_position: 0
 custom_edit_url: null
-hide_title: true
 ---
 
-# Function: each
-
-▸ **each**<Q, T\>(`arr`: Q, `callback?`: *ArrayCBT*<T\>, `thisArg?`: *unknown*): *void*
+▸ **each**<`Q`, `T`\>(`arr`, `callback?`, `thisArg?`): `void`
 
 A more-or-less spec-compliant Array forEach.
 
-**`remarks`** 
+**`Remarks`**
 
 This implementation loops in reverse order.
 
-**`see`** https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+**`See`**
 
-#### Type parameters:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
 
-Name | Type | Default | Description |
-:------ | :------ | :------ | :------ |
-`Q` | *unknown* | *unknown*[] | The type of the array-like being provided.   |
-`T` | - | Q[keyof Q] | The type of elements in the array-like being provided.    |
+#### Type parameters
 
-#### Parameters:
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `Q` | extends `unknown` = `unknown`[] | The type of the array-like being provided. |
+| `T` | `Q`[keyof `Q`] | The type of elements in the array-like being provided. |
 
-Name | Type | Description |
-:------ | :------ | :------ |
-`arr` | Q | The input array-like to loop through.   |
-`callback` | *ArrayCBT*<T\> | The callback provided.                   This iteratee is invoked with three arguments: value, index\|key, and arr.   |
-`thisArg` | *unknown* | The value to use as `this` when executing callback.    |
+#### Parameters
 
-**Returns:** *void*
+| Name | Type | Default value | Description |
+| :------ | :------ | :------ | :------ |
+| `arr` | `Q` | `undefined` | The input array-like to loop through. |
+| `callback` | `ArrayCBT`<`T`, `T`\> | `undefined` | The callback provided.                   This iteratee is invoked with three arguments: value, index\|key, and arr. |
+| `thisArg` | `unknown` | `undefined` | The value to use as `this` when executing callback. |
+
+#### Returns
+
+`void`
 
 void
 
-Defined in: [safe/array/each.ts:23](https://github.com/kaihodev/hikidashi/blob/ef3ca16/src/safe/array/each.ts#L23)
+#### Defined in
+
+[safe/array/each.ts:23](https://github.com/axisiscool/hikidashi/blob/6610d16/src/safe/array/each.ts#L23)

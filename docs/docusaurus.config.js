@@ -11,7 +11,7 @@ module.exports = {
   projectName: 'hikidashi',
   themeConfig: {
     image: 'https://opengraph.github.com/repo/kaihodev/hikidashi',
-    metadatas: [
+    metadata: [
       { httpEquiv: 'Content-Type', content: 'text/html; charset=utf-8' },
       { charSet: 'utf-8' },
       { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
@@ -112,7 +112,6 @@ module.exports = {
         readme: '../SAFE.md',
         readmeTitle: 'Safe Module Overview',
         globalsTitle: 'Safe Functions',
-        mode: 'library',
         tsconfig: './tsconfig.json',
         out: 'safe',
         allReflectionsHaveOwnDocument: true,

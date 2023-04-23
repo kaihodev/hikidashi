@@ -1,18 +1,18 @@
 ---
-id: "mapip"
-title: "Function: mapip"
-sidebar_label: "mapip"
+id: "mapipLeft"
+title: "Function: mapipLeft"
+sidebar_label: "mapipLeft"
 sidebar_position: 0
 custom_edit_url: null
 ---
 
-▸ **mapip**(`arr`, `cb`): `any`
+▸ **mapipLeft**(`arr`, `cb`): `unknown`[]
 
 A non-spec compliant fast Array map that *modifies the input array* and maps in-place.
 
 **`Remarks`**
 
-This implementation loops in reverse order.
+This implementation loops "normally," in normal order.
 The mapip function should be used with caution due to its destructive nature.
 We see promising use cases where you may iterate a map that is not used for any other purpose.
 Consider the following: const users = [111, 112, 113, 114].map(id => database.fetchById(id));
@@ -27,10 +27,10 @@ The user ID array is not used, but all other traditional map implementations mak
 
 #### Returns
 
-`any`
+`unknown`[]
 
 typeof arr - The modified input.
 
 #### Defined in
 
-[unsafe/array/mapip.ts:19](https://github.com/axisiscool/hikidashi/blob/6610d16/src/unsafe/array/mapip.ts#L19)
+[unsafe/array/mapipLeft.ts:19](https://github.com/axisiscool/hikidashi/blob/6610d16/src/unsafe/array/mapipLeft.ts#L19)

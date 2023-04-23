@@ -1,10 +1,9 @@
 ---
 id: "index"
 title: "Unsafe Module Overview"
-slug: "/unsafe"
 sidebar_label: "Readme"
+sidebar_position: 0
 custom_edit_url: null
-hide_title: true
 ---
 
 ## Hikidashi Unsafe

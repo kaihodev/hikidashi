@@ -1,14 +1,18 @@
 ---
-id: "filter"
-title: "Function: filter"
-sidebar_label: "filter"
+id: "filterRight"
+title: "Function: filterRight"
+sidebar_label: "filterRight"
 sidebar_position: 0
 custom_edit_url: null
 ---
 
-▸ **filter**(`arr`, `cb`): `any`
+▸ **filterRight**(`arr`, `cb`): typeof `arr`
 
 A fast Array filter.
+
+**`Remarks`**
+
+This implementation loops in reverse order.
 
 #### Parameters
 
@@ -19,10 +23,10 @@ A fast Array filter.
 
 #### Returns
 
-`any`
+typeof `arr`
 
 typeof arr - The filtered results.
 
 #### Defined in
 
-[unsafe/array/filter.ts:12](https://github.com/axisiscool/hikidashi/blob/6610d16/src/unsafe/array/filter.ts#L12)
+[unsafe/array/filterRight.ts:16](https://github.com/axisiscool/hikidashi/blob/6610d16/src/unsafe/array/filterRight.ts#L16)

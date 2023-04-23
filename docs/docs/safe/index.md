@@ -1,10 +1,9 @@
 ---
 id: "index"
 title: "Safe Module Overview"
-slug: "/safe"
 sidebar_label: "Readme"
+sidebar_position: 0
 custom_edit_url: null
-hide_title: true
 ---
 
 ## Hikidashi Safe

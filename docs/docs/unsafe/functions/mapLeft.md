@@ -1,18 +1,18 @@
 ---
-id: "map"
-title: "Function: map"
-sidebar_label: "map"
+id: "mapLeft"
+title: "Function: mapLeft"
+sidebar_label: "mapLeft"
 sidebar_position: 0
 custom_edit_url: null
 ---
 
-▸ **map**(`arr`, `cb`): `unknown`[]
+▸ **mapLeft**(`arr`, `cb`): `unknown`[]
 
 A non-spec compliant fast Array map.
 
 **`Remarks`**
 
-This implementation loops in reverse order.
+This implementation loops "normally," in normal order.
 
 #### Parameters
 
@@ -29,4 +29,4 @@ unknown[] - The new mapped array.
 
 #### Defined in
 
-[unsafe/array/map.ts:15](https://github.com/axisiscool/hikidashi/blob/6610d16/src/unsafe/array/map.ts#L15)
+[unsafe/array/mapLeft.ts:15](https://github.com/axisiscool/hikidashi/blob/6610d16/src/unsafe/array/mapLeft.ts#L15)

@@ -18,5 +18,9 @@
   "item.label.Unsafe API": {
     "message": "Unsafe API",
     "description": "Navbar item with label Unsafe API"
+  },
+  "logo.alt": {
+    "message": "Hikidashi",
+    "description": "The alt text of navbar logo"
   }
 }

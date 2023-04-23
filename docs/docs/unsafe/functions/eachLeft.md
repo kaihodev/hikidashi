@@ -1,18 +1,18 @@
 ---
-id: "each"
-title: "Function: each"
-sidebar_label: "each"
+id: "eachLeft"
+title: "Function: eachLeft"
+sidebar_label: "eachLeft"
 sidebar_position: 0
 custom_edit_url: null
 ---
 
-▸ **each**(`arr`, `cb`): `void`
+▸ **eachLeft**(`arr`, `cb`): `void`
 
 A non-spec compliant fast Array forEach.
 
 **`Remarks`**
 
-This implementation loops in reverse order.
+This implementation loops "normally," in normal order.
 
 #### Parameters
 
@@ -29,4 +29,4 @@ void
 
 #### Defined in
 
-[unsafe/array/each.ts:15](https://github.com/axisiscool/hikidashi/blob/6610d16/src/unsafe/array/each.ts#L15)
+[unsafe/array/eachLeft.ts:15](https://github.com/axisiscool/hikidashi/blob/6610d16/src/unsafe/array/eachLeft.ts#L15)

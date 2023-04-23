@@ -2,30 +2,32 @@
 id: "identity"
 title: "Function: identity"
 sidebar_label: "identity"
+sidebar_position: 0
 custom_edit_url: null
-hide_title: true
 ---
 
-# Function: identity
-
-▸ **identity**<T\>(`e`: T): T
+▸ **identity**<`T`\>(`e`): `T`
 
 Passthrough function returns the first parameter.
 
-#### Type parameters:
+#### Type parameters
 
-Name |
-:------ |
-`T` |
+| Name |
+| :------ |
+| `T` |
 
-#### Parameters:
+#### Parameters
 
-Name | Type | Description |
-:------ | :------ | :------ |
-`e` | T | The item to be returned.   |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `e` | `T` | The item to be returned. |
 
-**Returns:** T
+#### Returns
+
+`T`
 
 T - The parameter input.
 
-Defined in: [safe/util/identity.ts:7](https://github.com/kaihodev/hikidashi/blob/ef3ca16/src/safe/util/identity.ts#L7)
+#### Defined in
+
+[safe/util/identity.ts:7](https://github.com/axisiscool/hikidashi/blob/6610d16/src/safe/util/identity.ts#L7)
