@@ -1,9 +1,9 @@
-export { default as map } from './map.js';
-export { default as mapip } from './mapip.js';
+export { default as map } from './map';
+export { default as mapip } from './mapip';
 
-export { default as each } from './each.js';
-export { default as forEach } from './each.js';
+export { default as each } from './each';
+export { default as forEach } from './each';
 
-export { default as filter } from './filter.js';
+export { default as filter } from './filter';
 
-export { default as isArithmeticSequence } from './isArithmeticSequence.js';
+export { default as isArithmeticSequence } from './isArithmeticSequence';
